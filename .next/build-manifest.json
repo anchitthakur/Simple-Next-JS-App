@@ -7,6 +7,10 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/About": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/ApiPages": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"

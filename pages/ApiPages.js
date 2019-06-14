@@ -7,6 +7,7 @@ const ApiPages = () => {
     const [pages, setPages] = useState([1, 2, 3, 4, 5]);
     const [page, setPage] = useState(1)
     const clickHandler = (p) => {
+        window.scrollTo(0, 0)
         setPage(p);
     }
     
