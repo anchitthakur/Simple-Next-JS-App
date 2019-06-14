@@ -1,8 +1,16 @@
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 
 function Navbar() {
+
+  const [curr, setCurr] = useState('')
+
+  useEffect(() => {
+    setCurr(location.pathname)
+  }, [])
+
   return (
-  <>
+    <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">My App</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,24 +19,20 @@ function Navbar() {
 
         <div className="collapse navbar-collapse" id="navbarColor01">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-            <Link href="/"><a className="nav-link">Home <span className="sr-only">(current)</span></a></Link>
+            <li className={curr === '/' ? "nav-item active" : "nav-item"}>
+              <Link href="/"><a className="nav-link">Home <span className="sr-only">(current)</span></a></Link>
             </li>
-            <li className="nav-item">
-            <Link href="/About"><a className="nav-link">About</a></Link>
+            <li className={curr === '/About' ? "nav-item active" : "nav-item"}>
+              <Link href="/About"><a className="nav-link">About</a></Link>
             </li>
-            <li className="nav-item">
-            <Link href="/ApiPages"><a className="nav-link">API</a></Link>
+            <li className={curr === '/ApiPages' ? "nav-item active" : "nav-item"}>
+              <Link href="/ApiPages"><a className="nav-link">API</a></Link>
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="text" placeholder="Search" />
-              <button className="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
         </div>
       </nav>
     </>
-      );
-    }
-    
+  );
+}
+
 export default Navbar;
