@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -614,10 +614,7 @@ var Search = function Search(props) {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     className: "btn btn-secondary my-2 my-sm-0",
-    type: "button",
-    onClick: function onClick() {
-      return props.submitInput(search);
-    },
+    type: "submit",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -1570,7 +1567,7 @@ var ApiPages = function ApiPages() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/ApiPages.js ***!
   \*********************************/

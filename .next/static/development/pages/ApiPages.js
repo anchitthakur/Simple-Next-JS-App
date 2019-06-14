@@ -521,10 +521,7 @@ var Search = function Search(props) {
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
     className: "btn btn-secondary my-2 my-sm-0",
-    type: "button",
-    onClick: function onClick() {
-      return props.submitInput(search);
-    },
+    type: "submit",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -11364,7 +11361,7 @@ var ApiPages = function ApiPages() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!*****************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5CNew%20folder%5Cpages%5CApiPages.js ***!
   \*****************************************************************************************************************************************/
@@ -11387,5 +11384,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=ApiPages.js.map
