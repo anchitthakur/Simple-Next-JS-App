@@ -1,7 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Api from '../components/Api';
 import Layout from '../components/Layout';
-import React, { Component } from 'react'
 import Search from '../components/Search';
 import Pagination from '../components/Pagination'
 
@@ -46,9 +45,9 @@ const ApiPages = () => {
             <br />
             <Search submitInput={submitInput} />
             <br />
-            <Pagination increaseHandler={increaseHandler} decreaseHandler={decreaseHandler} clickHandler={clickHandler} pages={pages} page={page}/>
+            <Pagination increaseHandler={increaseHandler} decreaseHandler={decreaseHandler} clickHandler={clickHandler} pages={pages} page={page} />
             <Api page={page} search={search} />
-            <Pagination increaseHandler={increaseHandler} decreaseHandler={decreaseHandler} clickHandler={clickHandler} pages={pages} page={page}/>
+            <Pagination increaseHandler={increaseHandler} decreaseHandler={decreaseHandler} clickHandler={clickHandler} pages={pages} page={page} />
         </Layout>)
 }
 

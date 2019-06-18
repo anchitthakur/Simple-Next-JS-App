@@ -10726,7 +10726,7 @@ function About() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!***********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5CNew%20folder%5Cpages%5CAbout.js ***!
   \***********************************************************************************************************************************/
@@ -10749,5 +10749,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=About.js.map

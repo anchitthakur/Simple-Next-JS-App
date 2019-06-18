@@ -5,9 +5,9 @@ const Fetcher = function(page,search){
         console.log("starting")
         var url = 'https://newsapi.org/v2/everything?' +
             'q='+search+'&' +
-            'sortBy=popularity&' +
+            'sortBy=publishedAt&' +
             'page=' + page + '&' +
-            'pageSize=5&' +
+            'pageSize=5&language=en&' +
             'apiKey=3b214239993247f18926b8fab6ee014f';
         fetch(url).then(response => response.json())
             .then(json => {

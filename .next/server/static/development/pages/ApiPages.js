@@ -191,7 +191,7 @@ __webpack_require__.r(__webpack_exports__);
 var Fetcher = function Fetcher(page, search) {
   var data = new _babel_runtime_corejs2_core_js_promise__WEBPACK_IMPORTED_MODULE_0___default.a(function (resolve) {
     console.log("starting");
-    var url = 'https://newsapi.org/v2/everything?' + 'q=' + search + '&' + 'sortBy=popularity&' + 'page=' + page + '&' + 'pageSize=5&' + 'apiKey=3b214239993247f18926b8fab6ee014f';
+    var url = 'https://newsapi.org/v2/everything?' + 'q=' + search + '&' + 'sortBy=publishedAt&' + 'page=' + page + '&' + 'pageSize=5&language=en&' + 'apiKey=3b214239993247f18926b8fab6ee014f';
     isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default()(url).then(function (response) {
       return response.json();
     }).then(function (json) {
@@ -538,7 +538,19 @@ var NewsItem = function NewsItem(props) {
       lineNumber: 19
     },
     __self: this
-  }, props.props.content)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, "Source : "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("u", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, props.props.source.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
@@ -554,7 +566,7 @@ var NewsItem = function NewsItem(props) {
       lineNumber: 22
     },
     __self: this
-  }, "Source Article..")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Full Article..")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-footer text-muted",
     __source: {
       fileName: _jsxFileName,
@@ -1559,32 +1571,32 @@ var ApiPages = function ApiPages() {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 43
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 44
     },
     __self: this
   }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 45
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_5__["default"], {
     submitInput: submitInput,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 46
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 47
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -1595,7 +1607,7 @@ var ApiPages = function ApiPages() {
     page: page,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 48
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -1603,7 +1615,7 @@ var ApiPages = function ApiPages() {
     search: search,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 49
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -1614,7 +1626,7 @@ var ApiPages = function ApiPages() {
     page: page,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 50
     },
     __self: this
   }));

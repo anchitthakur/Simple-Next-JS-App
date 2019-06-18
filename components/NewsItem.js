@@ -16,10 +16,10 @@ const NewsItem = (props) => {
                     <b><p className="card-text">{props.props.description}</p></b>
                 </div>
                 <ul className="list-group list-group-flush">
-                    <li className="list-group-item">{props.props.content}</li>
+                    <li className="list-group-item"><strong>Source : </strong><u>{props.props.source.name}</u></li>
                 </ul>
                 <div className="card-body">
-                    <a href={props.props.url} className="card-link"  target="_blank" >Source Article..</a>
+                    <a href={props.props.url} className="card-link"  target="_blank" >Full Article..</a>
                 </div>
                 <div className="card-footer text-muted">
                     </div>
