@@ -23,10 +23,10 @@ function Navbar() {
               <Link href="/"><a className="nav-link">Home <span className="sr-only">(current)</span></a></Link>
             </li>
             <li className={curr === '/About' ? "nav-item active" : "nav-item"}>
-              <Link href="/About"><a className="nav-link">About</a></Link>
+              <Link href="/about"><a className="nav-link">About</a></Link>
             </li>
             <li className={curr === '/ApiPages' ? "nav-item active" : "nav-item"}>
-              <Link href="/ApiPages"><a className="nav-link">API</a></Link>
+              <Link href="/apipages"><a className="nav-link">API</a></Link>
             </li>
           </ul>
         </div>
