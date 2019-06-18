@@ -6,8 +6,8 @@ import { fetchPosts } from '../components/actions/postActions'
 
 function Api(props) {
     useEffect(() => {
-        if (Object.keys(props.posts).length == 0 || props.page!=1 || props.search!= 'tech')
-            props.fetchPosts({ page: props.page, search: props.search })
+        //if (Object.keys(props.posts).length == 0 || props.page != 1 || props.search != 'tech')
+        props.fetchPosts({ page: props.page, search: props.search })
     }, [props.page, props.search])
     console.log(props.page)
     console.log(props.search)
@@ -29,11 +29,12 @@ function Api(props) {
 
 Api.propTypes = {
     fetchPosts: Proptypes.func.isRequired,
-    posts: Proptypes.object.isRequired
+    posts: Proptypes.object.isRequired,
 }
 
 const mapStateToProps = state => ({
-    posts: state.posts.items
+    posts: state.posts.items,
+    page: state.page.page
 })
 
-export default connect(mapStateToProps, { fetchPosts })(Api)
+export default connect(mapStateToProps, { fetchPosts})(Api)

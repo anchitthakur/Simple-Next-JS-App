@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,17 +104,14 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/get-iterator */ "./node_modules/@babel/runtime-corejs2/core-js/get-iterator.js");
 /* harmony import */ var _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_NewsItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/NewsItem */ "./components/NewsItem.js");
-/* harmony import */ var _components_actions_postActions__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/actions/postActions */ "./components/actions/postActions.js");
-
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_NewsItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/NewsItem */ "./components/NewsItem.js");
+/* harmony import */ var _components_actions_postActions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/actions/postActions */ "./components/actions/postActions.js");
 
 var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Api.js";
 
@@ -124,8 +121,9 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Api.js";
 
 
 function Api(props) {
-  Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(function () {
-    if (_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_1___default()(props.posts).length == 0 || props.page != 1 || props.search != 'tech') props.fetchPosts({
+  Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
+    //if (Object.keys(props.posts).length == 0 || props.page != 1 || props.search != 'tech')
+    props.fetchPosts({
       page: props.page,
       search: props.search
     });
@@ -143,7 +141,7 @@ function Api(props) {
     try {
       for (var _iterator = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(props.posts.articles), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
         var i = _step.value;
-        arr.push(react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_NewsItem__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        arr.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_NewsItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
           key: i.url,
           props: i,
           __source: {
@@ -169,22 +167,23 @@ function Api(props) {
     }
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, arr);
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, arr);
 }
 
 Api.propTypes = {
-  fetchPosts: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
-  posts: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.object.isRequired
+  fetchPosts: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  posts: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.object.isRequired
 };
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    posts: state.posts.items
+    posts: state.posts.items,
+    page: state.page.page
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_3__["connect"])(mapStateToProps, {
-  fetchPosts: _components_actions_postActions__WEBPACK_IMPORTED_MODULE_6__["fetchPosts"]
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, {
+  fetchPosts: _components_actions_postActions__WEBPACK_IMPORTED_MODULE_5__["fetchPosts"]
 })(Api));
 
 /***/ }),
@@ -227,39 +226,32 @@ var Layout = function Layout(props) {
       lineNumber: 7
     },
     __self: this
-  }, "My App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-    keywords: "For Seo",
+  }, "My App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
+    rel: "stylesheet",
+    href: "https://bootswatch.com/4/darkly/bootstrap.css",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
-    rel: "stylesheet",
-    href: "https://bootswatch.com/4/darkly/bootstrap.css",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }, props.children));
@@ -574,142 +566,172 @@ var NewsItem = function NewsItem(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/actions/pagesActions */ "./components/actions/pagesActions.js");
+/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Pagination.js";
 
 
-var Pagination = function Pagination(_ref) {
-  var increaseHandler = _ref.increaseHandler,
-      decreaseHandler = _ref.decreaseHandler,
-      clickHandler = _ref.clickHandler,
-      pages = _ref.pages,
-      page = _ref.page;
+
+
+
+
+var Pagination = function Pagination(props) {
+  var pages = props.pages;
+  console.log(props);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "pagination",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[0] === 1 ? "page-item disabled" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: decreaseHandler,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, "-")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[0] === page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return clickHandler(pages[0]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, pages[0])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[1] === page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return clickHandler(pages[1]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, pages[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[2] === page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return clickHandler(pages[2]);
-    },
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
-  }, pages[2])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[3] === page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "page-link",
     onClick: function onClick() {
-      return clickHandler(pages[3]);
+      return props.decreasePages(pages);
     },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "-")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: pages[0] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 17
     },
     __self: this
-  }, pages[3])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[4] === page ? "page-item active" : "page-item",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "page-link",
+    onClick: function onClick() {
+      return props.changePage(pages[0]);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
+    },
+    __self: this
+  }, pages[0])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: pages[1] === props.page ? "page-item active" : "page-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "page-link",
     onClick: function onClick() {
-      return clickHandler(pages[4]);
+      return props.changePage(pages[1]);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
+    },
+    __self: this
+  }, pages[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: pages[2] === props.page ? "page-item active" : "page-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "page-link",
+    onClick: function onClick() {
+      return props.changePage(pages[2]);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, pages[2])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: pages[3] === props.page ? "page-item active" : "page-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "page-link",
+    onClick: function onClick() {
+      return props.changePage(pages[3]);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, pages[3])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    className: pages[4] === props.page ? "page-item active" : "page-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "page-link",
+    onClick: function onClick() {
+      return props.changePage(pages[4]);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
     },
     __self: this
   }, pages[4])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[4] === 20 ? "page-item disabled" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 32
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "page-link",
     enabled: "true",
-    onClick: increaseHandler,
+    onClick: function onClick() {
+      return props.increasePages(pages);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 33
     },
     __self: this
   }, "+")));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Pagination);
+Pagination.propTypes = {
+  increasePages: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
+  decreasePages: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
+  changePage: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
+  pages: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.array.isRequired,
+  page: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number.isRequired
+};
+
+var mapStateToProps = function mapStateToProps(state) {
+  return {
+    pages: state.pages.pages,
+    page: state.page.page
+  };
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, {
+  decreasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_2__["decreasePages"],
+  increasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_2__["increasePages"],
+  changePage: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__["changePage"]
+})(Pagination));
 
 /***/ }),
 
@@ -778,6 +800,79 @@ var Search = function Search(props) {
 
 /***/ }),
 
+/***/ "./components/actions/pageAction.js":
+/*!******************************************!*\
+  !*** ./components/actions/pageAction.js ***!
+  \******************************************/
+/*! exports provided: changePage */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changePage", function() { return changePage; });
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ "./components/actions/types.js");
+
+var changePage = function changePage(p) {
+  return function (dispatch) {
+    console.log(p);
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_PAGE"],
+      payload: p
+    });
+  };
+};
+
+/***/ }),
+
+/***/ "./components/actions/pagesActions.js":
+/*!********************************************!*\
+  !*** ./components/actions/pagesActions.js ***!
+  \********************************************/
+/*! exports provided: increasePages, decreasePages */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "increasePages", function() { return increasePages; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "decreasePages", function() { return decreasePages; });
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./types */ "./components/actions/types.js");
+
+
+var increasePages = function increasePages(pages) {
+  return function (dispatch) {
+    var arr = [];
+
+    for (var i in pages) {
+      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) + 1);
+    }
+
+    console.log("pages: ");
+    console.log(pages);
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_1__["INCREASE_PAGES"],
+      payload: arr
+    });
+  };
+};
+var decreasePages = function decreasePages(pages) {
+  return function (dispatch) {
+    var arr = [];
+
+    for (var i in pages) {
+      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) - 1);
+    }
+
+    dispatch({
+      type: _types__WEBPACK_IMPORTED_MODULE_1__["DECREASE_PAGES"],
+      payload: arr
+    });
+  };
+};
+
+/***/ }),
+
 /***/ "./components/actions/postActions.js":
 /*!*******************************************!*\
   !*** ./components/actions/postActions.js ***!
@@ -811,13 +906,19 @@ var fetchPosts = function fetchPosts(props) {
 /*!*************************************!*\
   !*** ./components/actions/types.js ***!
   \*************************************/
-/*! exports provided: FETCH_POSTS */
+/*! exports provided: FETCH_POSTS, INCREASE_PAGES, DECREASE_PAGES, CHANGE_PAGE */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FETCH_POSTS", function() { return FETCH_POSTS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "INCREASE_PAGES", function() { return INCREASE_PAGES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DECREASE_PAGES", function() { return DECREASE_PAGES; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CHANGE_PAGE", function() { return CHANGE_PAGE; });
 var FETCH_POSTS = 'FETCH_POSTS';
+var INCREASE_PAGES = 'INCREASE_PAGES';
+var DECREASE_PAGES = 'DECREASE_PAGES';
+var CHANGE_PAGE = 'CHANGE_PAGE';
 
 /***/ }),
 
@@ -833,11 +934,88 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "redux");
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _postReducer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./postReducer */ "./components/reducers/postReducer.js");
+/* harmony import */ var _pagesReducer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pagesReducer */ "./components/reducers/pagesReducer.js");
+/* harmony import */ var _pageReducer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pageReducer */ "./components/reducers/pageReducer.js");
+
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(redux__WEBPACK_IMPORTED_MODULE_0__["combineReducers"])({
-  posts: _postReducer__WEBPACK_IMPORTED_MODULE_1__["default"]
+  posts: _postReducer__WEBPACK_IMPORTED_MODULE_1__["default"],
+  pages: _pagesReducer__WEBPACK_IMPORTED_MODULE_2__["default"],
+  page: _pageReducer__WEBPACK_IMPORTED_MODULE_3__["default"]
 }));
+
+/***/ }),
+
+/***/ "./components/reducers/pageReducer.js":
+/*!********************************************!*\
+  !*** ./components/reducers/pageReducer.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions/types */ "./components/actions/types.js");
+
+
+var initialState = {
+  page: 1
+};
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _actions_types__WEBPACK_IMPORTED_MODULE_1__["CHANGE_PAGE"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        page: action.payload
+      });
+
+    default:
+      return state;
+  }
+});
+
+/***/ }),
+
+/***/ "./components/reducers/pagesReducer.js":
+/*!*********************************************!*\
+  !*** ./components/reducers/pagesReducer.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _actions_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../actions/types */ "./components/actions/types.js");
+
+
+var initialState = {
+  pages: [1, 2, 3, 4, 5]
+};
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
+  var action = arguments.length > 1 ? arguments[1] : undefined;
+
+  switch (action.type) {
+    case _actions_types__WEBPACK_IMPORTED_MODULE_1__["INCREASE_PAGES"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        pages: action.payload
+      });
+
+    case _actions_types__WEBPACK_IMPORTED_MODULE_1__["DECREASE_PAGES"]:
+      return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+        pages: action.payload
+      });
+
+    default:
+      return state;
+  }
+});
 
 /***/ }),
 
@@ -863,7 +1041,6 @@ var initialState = {
 
   switch (action.type) {
     case _actions_types__WEBPACK_IMPORTED_MODULE_1__["FETCH_POSTS"]:
-      console.log(action);
       return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
         items: action.payload
       });
@@ -897,7 +1074,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var initialState = {};
 var middleware = [redux_thunk__WEBPACK_IMPORTED_MODULE_1___default.a];
-var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, Object(redux__WEBPACK_IMPORTED_MODULE_0__["compose"])(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware) // window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__()
+var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, Object(redux__WEBPACK_IMPORTED_MODULE_0__["compose"])(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware) //window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__()
 ));
 /* harmony default export */ __webpack_exports__["default"] = (store);
 
@@ -1702,19 +1879,18 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
-/* harmony import */ var _components_Pagination__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Pagination */ "./components/Pagination.js");
-/* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/store */ "./components/store.js");
-
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
+/* harmony import */ var _components_Pagination__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Pagination */ "./components/Pagination.js");
+/* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/store */ "./components/store.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_8__);
 
 var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\pages\\apipages.js";
 
@@ -1726,122 +1902,80 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\pages\\apipages.js";
 
 
 
+
 var ApiPages = function ApiPages() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])([1, 2, 3, 4, 5]),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState, 2),
-      pages = _useState2[0],
-      setPages = _useState2[1];
-
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(1),
-      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState3, 2),
-      page = _useState4[0],
-      setPage = _useState4[1];
-
-  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])('tech'),
-      _useState6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState5, 2),
-      search = _useState6[0],
-      setSearch = _useState6[1];
-
-  var clickHandler = function clickHandler(p) {
-    window.scrollTo(0, 0);
-    setPage(p);
-  };
-
-  var increaseHandler = function increaseHandler() {
-    var arr = [];
-
-    for (var i in pages) {
-      console.log(arr);
-      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) + 1);
-    }
-
-    console.log(arr);
-    setPages(arr);
-  };
-
-  var decreaseHandler = function decreaseHandler() {
-    var arr = [];
-
-    for (var i in pages) {
-      console.log(arr);
-      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) - 1);
-    }
-
-    console.log(arr);
-    setPages(arr);
-  };
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])('tech'),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      search = _useState2[0],
+      setSearch = _useState2[1];
 
   var submitInput = function submitInput(s) {
     console.log('okay');
     setSearch(s);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__["Provider"], {
-    store: _components_store__WEBPACK_IMPORTED_MODULE_8__["default"],
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], {
+    store: _components_store__WEBPACK_IMPORTED_MODULE_7__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 19
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 20
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
+    keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 21
     },
     __self: this
-  }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", {
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 23
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_5__["default"], {
     submitInput: submitInput,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 26
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 27
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    increaseHandler: increaseHandler,
-    decreaseHandler: decreaseHandler,
-    clickHandler: clickHandler,
-    pages: pages,
-    page: page,
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 28
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    page: page,
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_3__["default"], {
     search: search,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    increaseHandler: increaseHandler,
-    decreaseHandler: decreaseHandler,
-    clickHandler: clickHandler,
-    pages: pages,
-    page: page,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 29
     },
     __self: this
   })));
@@ -1851,7 +1985,7 @@ var ApiPages = function ApiPages() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/apipages.js ***!
   \*********************************/

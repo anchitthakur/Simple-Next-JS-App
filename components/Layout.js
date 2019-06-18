@@ -5,7 +5,6 @@ const Layout = (props) => (
     <div>
         <Head>
             <title>My App</title>
-            <meta keywords="For Seo"></meta>
             <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css" />
         </Head>
         <div className="container"><Navbar /></div>
