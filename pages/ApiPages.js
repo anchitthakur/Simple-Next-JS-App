@@ -8,12 +8,6 @@ import store from "../components/store";
 import Head from 'next/head'
 
 const ApiPages = () => {
-    const [search, setSearch] = useState('tech')
-    
-    const submitInput = (s) => {
-        setSearch(s)
-
-    }
     return (
         <Provider store={store}>
             <Head>
@@ -22,10 +16,10 @@ const ApiPages = () => {
             <Layout>
                 <h2>NEWS</h2>
                 <br />
-                <Search submitInput={submitInput} />
+                <Search/>
                 <br />
                 <Pagination/>
-                <Api search={search} />
+                <Api/>
                 <Pagination/>
             </Layout>
         </Provider>)

@@ -1,7 +1,8 @@
-import { CHANGE_PAGE } from '../actions/types'
+import { CHANGE_PAGE, CHANGE_SEARCH } from '../actions/types'
 
 const initialState = {
-    page: 1
+    page: 1,
+    search: 'tech'
 }
 
 export default function(state = initialState,action){
@@ -10,6 +11,11 @@ export default function(state = initialState,action){
             return{
                 ...state,
                 page:action.payload
+            }
+        case CHANGE_SEARCH:
+            return{
+                ...state,
+                search:action.payload
             }
         default:
             return state

@@ -24,14 +24,16 @@ function Api(props) {
     )
 }
 
-Api.propTypes = {
+Api.Proptypes = {
     fetchPosts: Proptypes.func.isRequired,
     posts: Proptypes.object.isRequired,
+    search: Proptypes.string.isRequired
 }
 
 const mapStateToProps = state => ({
     posts: state.posts.items,
-    page: state.page.page
+    page: state.page.page,
+    search: state.page.search
 })
 
-export default connect(mapStateToProps, { fetchPosts})(Api)
+export default connect(mapStateToProps, { fetchPosts })(Api)
