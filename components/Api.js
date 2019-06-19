@@ -6,13 +6,10 @@ import { fetchPosts } from '../components/actions/postActions'
 
 function Api(props) {
     useEffect(() => {
-        //if (Object.keys(props.posts).length == 0 || props.page != 1 || props.search != 'tech')
+        //if (Object.keys(props.posts).length == 0)
         props.fetchPosts({ page: props.page, search: props.search })
-    }, [props.page, props.search])
-    console.log(props.page)
-    console.log(props.search)
+    }, [props.page,props.search])
     let arr = [];
-    console.log(props.posts)
 
     if (props.posts.status === 'ok')
         for (let i of props.posts.articles) {

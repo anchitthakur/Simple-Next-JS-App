@@ -6,9 +6,6 @@ import Proptypes from 'prop-types'
 
 const Pagination = (props) => {
     const pages = props.pages
-
-    console.log(props)
-
     return (
         <ul className="pagination">
             <li className={pages[0] === 1 ? "page-item disabled" : "page-item"}>

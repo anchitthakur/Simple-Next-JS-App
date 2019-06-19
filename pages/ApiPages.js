@@ -11,7 +11,6 @@ const ApiPages = () => {
     const [search, setSearch] = useState('tech')
     
     const submitInput = (s) => {
-        console.log('okay')
         setSearch(s)
 
     }
@@ -27,7 +26,7 @@ const ApiPages = () => {
                 <br />
                 <Pagination/>
                 <Api search={search} />
-                {/* <Pagination clickHandler={clickHandler} page={page} /> */}
+                <Pagination/>
             </Layout>
         </Provider>)
 }

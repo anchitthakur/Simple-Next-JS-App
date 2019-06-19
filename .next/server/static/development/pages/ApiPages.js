@@ -122,16 +122,13 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Api.js";
 
 function Api(props) {
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
-    //if (Object.keys(props.posts).length == 0 || props.page != 1 || props.search != 'tech')
+    //if (Object.keys(props.posts).length == 0)
     props.fetchPosts({
       page: props.page,
       search: props.search
     });
   }, [props.page, props.search]);
-  console.log(props.page);
-  console.log(props.search);
   var arr = [];
-  console.log(props.posts);
 
   if (props.posts.status === 'ok') {
     var _iteratorNormalCompletion = true;
@@ -146,7 +143,7 @@ function Api(props) {
           props: i,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 20
+            lineNumber: 17
           },
           __self: this
         }));
@@ -382,6 +379,7 @@ function Navbar() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    prefetch: true,
     href: "/about",
     __source: {
       fileName: _jsxFileName,
@@ -581,19 +579,18 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Pagination.j
 
 var Pagination = function Pagination(props) {
   var pages = props.pages;
-  console.log(props);
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "pagination",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[0] === 1 ? "page-item disabled" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -603,14 +600,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 12
     },
     __self: this
   }, "-")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[0] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -620,14 +617,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 15
     },
     __self: this
   }, pages[0])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[1] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 17
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -637,14 +634,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 18
     },
     __self: this
   }, pages[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[2] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -654,14 +651,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 21
     },
     __self: this
   }, pages[2])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[3] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -671,14 +668,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 24
     },
     __self: this
   }, pages[3])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[4] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -688,14 +685,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 27
     },
     __self: this
   }, pages[4])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[4] === 20 ? "page-item disabled" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 29
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -706,7 +703,7 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 30
     },
     __self: this
   }, "+")));
@@ -814,7 +811,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var changePage = function changePage(p) {
   return function (dispatch) {
-    console.log(p);
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_PAGE"],
       payload: p
@@ -888,7 +884,6 @@ __webpack_require__.r(__webpack_exports__);
 var fetchPosts = function fetchPosts(props) {
   return function (dispatch) {
     var url = 'https://newsapi.org/v2/everything?' + 'q=' + props.search + '&' + 'sortBy=publishedAt&' + 'page=' + props.page + '&' + 'pageSize=5&language=en&' + 'apiKey=3b214239993247f18926b8fab6ee014f';
-    console.log(url, props);
     fetch(url).then(function (response) {
       return response.json();
     }).then(function (json) {
@@ -1910,7 +1905,6 @@ var ApiPages = function ApiPages() {
       setSearch = _useState2[1];
 
   var submitInput = function submitInput(s) {
-    console.log('okay');
     setSearch(s);
   };
 
@@ -1918,61 +1912,67 @@ var ApiPages = function ApiPages() {
     store: _components_store__WEBPACK_IMPORTED_MODULE_7__["default"],
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("meta", {
     keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: this
   }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_5__["default"], {
     submitInput: submitInput,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_3__["default"], {
     search: search,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29

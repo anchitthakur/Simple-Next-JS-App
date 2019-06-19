@@ -8,7 +8,6 @@ export const fetchPosts = (props) => dispatch => {
             'page=' + props.page + '&' +
             'pageSize=5&language=en&' +
             'apiKey=3b214239993247f18926b8fab6ee014f';
-        console.log(url,props)
         fetch(url).then(response => response.json())
             .then(json => dispatch({
                 type: FETCH_POSTS,
