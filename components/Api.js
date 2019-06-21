@@ -14,7 +14,7 @@ function Api(props) {
     if (props.posts.status === 'ok')
         for (let i of props.posts.articles) {
             arr.push(
-                <NewsItem key={i.url} props={i} />
+                <NewsItem key={i.url} article={i} />
             )
         }
     return (

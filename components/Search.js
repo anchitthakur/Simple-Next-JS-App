@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { connect } from 'react-redux'
-import { changeSearch } from '../components/actions/pageAction'
 import Proptypes from 'prop-types'
-
+import { changeSearch } from '../components/actions/pageAction'
 
 const Search = (props) => {
     const [search, setSearch] = useState('tech')

@@ -19,7 +19,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_NewsItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/NewsItem */ "./components/NewsItem.js");
 /* harmony import */ var _components_actions_postActions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/actions/postActions */ "./components/actions/postActions.js");
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Api.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Api.js";
 
 
 
@@ -107,7 +107,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Layout.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Layout.js";
 
 
 
@@ -181,7 +181,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Navbar.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Navbar.js";
 
 
 
@@ -340,7 +340,7 @@ function Navbar() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\NewsItem.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\NewsItem.js";
 
 var imgStyle = {
   fontSize: '15px',
@@ -477,7 +477,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Pagination.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Pagination.js";
 
 
 
@@ -656,7 +656,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Search.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Search.js";
 
 
 
@@ -1010,8 +1010,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var initialState = {};
 var middleware = [redux_thunk__WEBPACK_IMPORTED_MODULE_1__["default"]];
-var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, Object(redux__WEBPACK_IMPORTED_MODULE_0__["compose"])(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware) //window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__()
-));
+var composeEnhancers = global__WEBPACK_IMPORTED_MODULE_3___default.a.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || redux__WEBPACK_IMPORTED_MODULE_0__["compose"];
+var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, composeEnhancers(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware)));
 /* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
@@ -7657,10 +7657,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5CNew%20folder%5Cpages%5CApiPages.js!./":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5CNew%20folder%5Cpages%5CApiPages.js ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js!./":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js ***!
+  \*****************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -8213,12 +8213,12 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ "./node_modules/object-assign/index.js":
 /*!***************************************************************************************************!*\
-  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_1aef2d0bbc0d334d831c ***!
+  !*** delegated ./node_modules/object-assign/index.js from dll-reference dll_e9ced4903ed7b2c99d94 ***!
   \***************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c */ "dll-reference dll_1aef2d0bbc0d334d831c"))("./node_modules/object-assign/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_e9ced4903ed7b2c99d94 */ "dll-reference dll_e9ced4903ed7b2c99d94"))("./node_modules/object-assign/index.js");
 
 /***/ }),
 
@@ -8691,12 +8691,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_1aef2d0bbc0d334d831c ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_e9ced4903ed7b2c99d94 ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c */ "dll-reference dll_1aef2d0bbc0d334d831c"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_e9ced4903ed7b2c99d94 */ "dll-reference dll_e9ced4903ed7b2c99d94"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -9304,12 +9304,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_1aef2d0bbc0d334d831c ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_e9ced4903ed7b2c99d94 ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c */ "dll-reference dll_1aef2d0bbc0d334d831c"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_e9ced4903ed7b2c99d94 */ "dll-reference dll_e9ced4903ed7b2c99d94"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -10055,12 +10055,12 @@ exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node
 
 /***/ "./node_modules/react-dom/index.js":
 /*!***********************************************************************************************!*\
-  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_1aef2d0bbc0d334d831c ***!
+  !*** delegated ./node_modules/react-dom/index.js from dll-reference dll_e9ced4903ed7b2c99d94 ***!
   \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c */ "dll-reference dll_1aef2d0bbc0d334d831c"))("./node_modules/react-dom/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_e9ced4903ed7b2c99d94 */ "dll-reference dll_e9ced4903ed7b2c99d94"))("./node_modules/react-dom/index.js");
 
 /***/ }),
 
@@ -12720,12 +12720,12 @@ module.exports = ReactPropTypesSecret;
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_1aef2d0bbc0d334d831c ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_e9ced4903ed7b2c99d94 ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c */ "dll-reference dll_1aef2d0bbc0d334d831c"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_e9ced4903ed7b2c99d94 */ "dll-reference dll_e9ced4903ed7b2c99d94"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -15034,12 +15034,12 @@ module.exports = {
 
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!******************************************************************************************************!*\
-  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_1aef2d0bbc0d334d831c ***!
+  !*** delegated ./node_modules/webpack/buildin/global.js from dll-reference dll_e9ced4903ed7b2c99d94 ***!
   \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c */ "dll-reference dll_1aef2d0bbc0d334d831c"))("./node_modules/webpack/buildin/global.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_e9ced4903ed7b2c99d94 */ "dll-reference dll_e9ced4903ed7b2c99d94"))("./node_modules/webpack/buildin/global.js");
 
 /***/ }),
 
@@ -15130,7 +15130,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/store */ "./components/store.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\pages\\ApiPages.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
 
 
 
@@ -15218,25 +15218,25 @@ var ApiPages = function ApiPages() {
 /***/ }),
 
 /***/ 0:
-/*!*****************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5CNew%20folder%5Cpages%5CApiPages.js ***!
-  \*****************************************************************************************************************************************/
+/*!*********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js ***!
+  \*********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5CNew%20folder%5Cpages%5CApiPages.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5CNew%20folder%5Cpages%5CApiPages.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js!./");
 
 
 /***/ }),
 
-/***/ "dll-reference dll_1aef2d0bbc0d334d831c":
+/***/ "dll-reference dll_e9ced4903ed7b2c99d94":
 /*!*******************************************!*\
-  !*** external "dll_1aef2d0bbc0d334d831c" ***!
+  !*** external "dll_e9ced4903ed7b2c99d94" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_1aef2d0bbc0d334d831c;
+module.exports = dll_e9ced4903ed7b2c99d94;
 
 /***/ })
 

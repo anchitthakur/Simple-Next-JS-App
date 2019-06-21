@@ -1,11 +1,10 @@
-import { useState } from 'react';
 import { Provider } from 'react-redux'
+import Head from 'next/head'
 import Api from '../components/Api';
 import Layout from '../components/Layout';
 import Search from '../components/Search';
 import Pagination from '../components/Pagination'
 import store from "../components/store";
-import Head from 'next/head'
 
 const ApiPages = () => {
     return (

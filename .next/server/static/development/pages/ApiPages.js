@@ -113,7 +113,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_NewsItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/NewsItem */ "./components/NewsItem.js");
 /* harmony import */ var _components_actions_postActions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/actions/postActions */ "./components/actions/postActions.js");
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Api.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Api.js";
 
 
 
@@ -201,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Layout.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Layout.js";
 
 
 
@@ -275,7 +275,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Navbar.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Navbar.js";
 
 
 
@@ -434,7 +434,7 @@ function Navbar() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\NewsItem.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\NewsItem.js";
 
 var imgStyle = {
   fontSize: '15px',
@@ -572,7 +572,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Pagination.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Pagination.js";
 
 
 
@@ -752,7 +752,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\components\\Search.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Search.js";
 
 
 
@@ -1109,8 +1109,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var initialState = {};
 var middleware = [redux_thunk__WEBPACK_IMPORTED_MODULE_1___default.a];
-var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, Object(redux__WEBPACK_IMPORTED_MODULE_0__["compose"])(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware) //window.__REDUX_DEVTOOLS_EXTENSION__&&window.__REDUX_DEVTOOLS_EXTENSION__()
-));
+var composeEnhancers = global__WEBPACK_IMPORTED_MODULE_3___default.a.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || redux__WEBPACK_IMPORTED_MODULE_0__["compose"];
+var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, composeEnhancers(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware)));
 /* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
@@ -1925,7 +1925,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/store */ "./components/store.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\New folder\\pages\\ApiPages.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
 
 
 
@@ -2019,7 +2019,7 @@ var ApiPages = function ApiPages() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\im\Desktop\New folder\pages\ApiPages.js */"./pages/ApiPages.js");
+module.exports = __webpack_require__(/*! C:\Users\im\Desktop\main\pages\ApiPages.js */"./pages/ApiPages.js");
 
 
 /***/ }),

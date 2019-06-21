@@ -1,8 +1,7 @@
 import { connect } from 'react-redux'
+import Proptypes from 'prop-types'
 import { increasePages, decreasePages } from '../components/actions/pagesActions'
 import { changePage } from '../components/actions/pageAction'
-import Proptypes from 'prop-types'
-
 
 const Pagination = (props) => {
     const pages = props.pages
