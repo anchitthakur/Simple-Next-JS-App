@@ -1,4 +1,3 @@
-export const FETCH_POSTS = 'FETCH_POSTS'
 export const INCREASE_PAGES = 'INCREASE_PAGES'
 export const DECREASE_PAGES = 'DECREASE_PAGES'
 export const CHANGE_PAGE = 'CHANGE_PAGE'
