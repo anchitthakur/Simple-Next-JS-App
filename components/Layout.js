@@ -5,7 +5,7 @@ const Layout = (props) => (
     <div>
         <Head>
             <title>My App</title>
-            <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css" />
+            <link rel="stylesheet" href="https://bootswatch.com/4/cosmo/bootstrap.min.css" />
         </Head>
         <div className="container"><Navbar /></div>
         <div className="container">{props.children}</div>

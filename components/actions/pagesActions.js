@@ -6,8 +6,6 @@ export const increasePages = (pages) => dispatch => {
     for (let i in pages) {
         arr.push(parseInt(pages[i]) + 1)
     }
-    console.log("pages: ")
-    console.log(pages)
     dispatch({
         type: INCREASE_PAGES,
         payload: arr

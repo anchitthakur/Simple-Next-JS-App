@@ -8,7 +8,7 @@ const NewsItem = ({article}) => {
         <>
                 <div className="card mb-3">
                 <div className="card-body">
-                    <h5 className="card-title">{article.title}</h5>
+                    <h5 className="card-title"><b><u>{article.title}</u></b></h5>
                     <h6 className="card-subtitle text-muted">{article.publishedAt}</h6>
                 </div>
                 <img style= {imgStyle} src={article.urlToImage} alt="Card image" />

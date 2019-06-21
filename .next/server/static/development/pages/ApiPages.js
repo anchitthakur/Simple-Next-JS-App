@@ -140,7 +140,7 @@ function Api(props) {
         var i = _step.value;
         arr.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_NewsItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
           key: i.url,
-          props: i,
+          article: i,
           __source: {
             fileName: _jsxFileName,
             lineNumber: 17
@@ -198,9 +198,9 @@ var mapStateToProps = function mapStateToProps(state) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
 var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Layout.js";
 
 
@@ -213,7 +213,7 @@ var Layout = function Layout(props) {
       lineNumber: 5
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
@@ -227,7 +227,7 @@ var Layout = function Layout(props) {
     __self: this
   }, "My App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
     rel: "stylesheet",
-    href: "https://bootswatch.com/4/darkly/bootstrap.css",
+    href: "https://bootswatch.com/4/cosmo/bootstrap.min.css",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
@@ -240,7 +240,7 @@ var Layout = function Layout(props) {
       lineNumber: 10
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
@@ -381,7 +381,6 @@ function Navbar() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    prefetch: true,
     href: "/About",
     __source: {
       fileName: _jsxFileName,
@@ -441,7 +440,8 @@ var imgStyle = {
   textAlign: 'center'
 };
 
-var NewsItem = function NewsItem(props) {
+var NewsItem = function NewsItem(_ref) {
+  var article = _ref.article;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card mb-3",
     __source: {
@@ -463,16 +463,28 @@ var NewsItem = function NewsItem(props) {
       lineNumber: 11
     },
     __self: this
-  }, props.props.title), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("u", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, article.title))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
     className: "card-subtitle text-muted",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, props.props.publishedAt)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+  }, article.publishedAt)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     style: imgStyle,
-    src: props.props.urlToImage,
+    src: article.urlToImage,
     alt: "Card image",
     __source: {
       fileName: _jsxFileName,
@@ -499,7 +511,7 @@ var NewsItem = function NewsItem(props) {
       lineNumber: 16
     },
     __self: this
-  }, props.props.description))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+  }, article.description))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-group list-group-flush",
     __source: {
       fileName: _jsxFileName,
@@ -525,7 +537,7 @@ var NewsItem = function NewsItem(props) {
       lineNumber: 19
     },
     __self: this
-  }, props.props.source.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, article.source.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
@@ -533,7 +545,7 @@ var NewsItem = function NewsItem(props) {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: props.props.url,
+    href: article.url,
     className: "card-link",
     target: "_blank",
     __source: {
@@ -568,10 +580,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/actions/pagesActions */ "./components/actions/pagesActions.js");
-/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pagesActions */ "./components/actions/pagesActions.js");
+/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
 var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Pagination.js";
 
 
@@ -585,14 +597,14 @@ var Pagination = function Pagination(props) {
     className: "pagination",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[0] === 1 ? "page-item disabled" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -602,14 +614,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 11
     },
     __self: this
   }, "-")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[0] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -619,14 +631,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 14
     },
     __self: this
   }, pages[0])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[1] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -636,14 +648,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
   }, pages[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[2] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -653,14 +665,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, pages[2])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[3] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -670,14 +682,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: this
   }, pages[3])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[4] === props.page ? "page-item active" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -687,14 +699,14 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: this
   }, pages[4])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: pages[4] === 20 ? "page-item disabled" : "page-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -705,18 +717,18 @@ var Pagination = function Pagination(props) {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   }, "+")));
 };
 
 Pagination.propTypes = {
-  increasePages: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
-  decreasePages: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
-  changePage: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
-  pages: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.array.isRequired,
-  page: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.number.isRequired
+  increasePages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+  decreasePages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+  changePage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
+  pages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array.isRequired,
+  page: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired
 };
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -727,9 +739,9 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, {
-  decreasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_2__["decreasePages"],
-  increasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_2__["increasePages"],
-  changePage: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__["changePage"]
+  decreasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__["decreasePages"],
+  increasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__["increasePages"],
+  changePage: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__["changePage"]
 })(Pagination));
 
 /***/ }),
@@ -748,9 +760,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
 
 var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Search.js";
 
@@ -779,7 +791,7 @@ var Search = function Search(props) {
     onSubmit: handleSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
@@ -789,7 +801,7 @@ var Search = function Search(props) {
     onChange: inputChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
@@ -797,15 +809,15 @@ var Search = function Search(props) {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, "Search"));
 };
 
 Search.Proptypes = {
-  changeSearch: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.func.isRequired,
-  search: prop_types__WEBPACK_IMPORTED_MODULE_4___default.a.string.isRequired
+  changeSearch: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func.isRequired,
+  search: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string.isRequired
 };
 
 var mapStateToProps = function mapStateToProps(state) {
@@ -815,7 +827,7 @@ var mapStateToProps = function mapStateToProps(state) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_2__["connect"])(mapStateToProps, {
-  changeSearch: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_3__["changeSearch"]
+  changeSearch: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__["changeSearch"]
 })(Search));
 
 /***/ }),
@@ -876,8 +888,6 @@ var increasePages = function increasePages(pages) {
       arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) + 1);
     }
 
-    console.log("pages: ");
-    console.log(pages);
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_1__["INCREASE_PAGES"],
       payload: arr
@@ -1100,17 +1110,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(redux__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux-thunk */ "redux-thunk");
 /* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(redux_thunk__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./reducers */ "./components/reducers/index.js");
-/* harmony import */ var global__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! global */ "global");
-/* harmony import */ var global__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(global__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var global__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! global */ "global");
+/* harmony import */ var global__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(global__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./reducers */ "./components/reducers/index.js");
 
 
 
 
 var initialState = {};
 var middleware = [redux_thunk__WEBPACK_IMPORTED_MODULE_1___default.a];
-var composeEnhancers = global__WEBPACK_IMPORTED_MODULE_3___default.a.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || redux__WEBPACK_IMPORTED_MODULE_0__["compose"];
-var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_2__["default"], initialState, composeEnhancers(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware)));
+var composeEnhancers = global__WEBPACK_IMPORTED_MODULE_2___default.a.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || redux__WEBPACK_IMPORTED_MODULE_0__["compose"];
+var store = Object(redux__WEBPACK_IMPORTED_MODULE_0__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_3__["default"], initialState, composeEnhancers(redux__WEBPACK_IMPORTED_MODULE_0__["applyMiddleware"].apply(void 0, middleware)));
 /* harmony default export */ __webpack_exports__["default"] = (store);
 
 /***/ }),
@@ -1918,15 +1928,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
-/* harmony import */ var _components_Pagination__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Pagination */ "./components/Pagination.js");
-/* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/store */ "./components/store.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
+/* harmony import */ var _components_Pagination__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Pagination */ "./components/Pagination.js");
+/* harmony import */ var _components_store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/store */ "./components/store.js");
 var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
-
 
 
 
@@ -1938,71 +1947,71 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
 
 var ApiPages = function ApiPages() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_1__["Provider"], {
-    store: _components_store__WEBPACK_IMPORTED_MODULE_6__["default"],
+    store: _components_store__WEBPACK_IMPORTED_MODULE_7__["default"],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_7___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
     keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 13
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 16
     },
     __self: this
   }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 17
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 22
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
     },
     __self: this
   })));
