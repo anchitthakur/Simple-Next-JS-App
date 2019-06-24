@@ -134,7 +134,7 @@ function Api(props) {
           article: i,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 11
+            lineNumber: 10
           },
           __self: this
         }));
