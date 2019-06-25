@@ -44,7 +44,7 @@ ApiPages.getInitialProps = async function ({ search = 'tech', page = 1, flag = 0
         'q=' + search + '&' +
         'sortBy=publishedAt&' +
         'page=' + page + '&' +
-        'pageSize=5&language=en&' +
+        'pageSize=10&language=en&' +
         'apiKey=3b214239993247f18926b8fab6ee014f';
     const res = await fetch(url);
     const json = await res.json()

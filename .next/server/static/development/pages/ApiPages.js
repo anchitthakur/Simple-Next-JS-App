@@ -420,11 +420,45 @@ function Navbar() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_lazy_load__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-lazy-load */ "react-lazy-load");
+/* harmony import */ var react_lazy_load__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_lazy_load__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\NewsItem.js";
 
+// import LazyLoad from 'react-lazy-load';
+// const imgStyle = {
+//     // height: '200px',
+//     // width: '100px',
+// };
+// const NewsItem = ({ article }) => {
+//     return (
+//         <>
+//             <div className="card mb-3">
+//                 <div className="card-body">
+//                     <h5 className="card-title"><b><u>{article.title}</u></b></h5>
+//                     <h6 className="card-subtitle text-muted">{article.publishedAt}</h6>
+//                 </div>
+//                 <LazyLoad debounce={false}offsetVertical={500}>
+//                     <img style={imgStyle} src={article.urlToImage} alt="Card image" />
+//                 </LazyLoad>
+//                 <div className="card-body">
+//                     <b><p className="card-text">{article.description}</p></b>
+//                 </div>
+//                 <ul className="list-group list-group-flush">
+//                     <li className="list-group-item"><strong>Source : </strong><u>{article.source.name}</u></li>
+//                 </ul>
+//                 <div className="card-body">
+//                     <a href={article.url} className="card-link" target="_blank" rel="noopener" >Full Article..</a>
+//                 </div>
+//                 <div className="card-footer text-muted">
+//                 </div>
+//             </div>
+//         </>
+//     );
+// }
+// export default NewsItem;
+
 var imgStyle = {
-  fontSize: '15px',
-  textAlign: 'center'
+  "width": '100%'
 };
 
 var NewsItem = function NewsItem(_ref) {
@@ -433,102 +467,113 @@ var NewsItem = function NewsItem(_ref) {
     className: "card mb-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 45
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
     className: "card-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("u", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 47
     },
     __self: this
   }, article.title))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h6", {
     className: "card-subtitle text-muted",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 48
     },
     __self: this
-  }, article.publishedAt)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    style: imgStyle,
-    src: article.urlToImage,
-    alt: "Card image",
+  }, article.publishedAt)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_lazy_load__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    debounce: true,
+    offsetVertical: 600,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 50
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    style: imgStyle,
+    src: article.urlToImage,
+    onError: function onError(e) {
+      e.target.onerror = null;
+      e.target.src = "/static/img.png";
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 53
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 54
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     className: "card-text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 54
     },
     __self: this
   }, article.description))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "list-group list-group-flush",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "list-group-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 57
     },
     __self: this
   }, "Source : "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("u", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 57
     },
     __self: this
   }, article.source.name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-body",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 59
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -537,14 +582,14 @@ var NewsItem = function NewsItem(_ref) {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 60
     },
     __self: this
   }, "Full Article..")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "card-footer text-muted",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 62
     },
     __self: this
   })));
@@ -1735,63 +1780,63 @@ var ApiPages = function ApiPages(props) {
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("meta", {
     keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 26
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 27
     },
     __self: this
   }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 28
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 29
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 30
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 31
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_7__["default"], {
     data: data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   })));
@@ -1822,7 +1867,7 @@ function () {
             });
 
           case 3:
-            url = 'https://newsapi.org/v2/everything?' + 'q=' + search + '&' + 'sortBy=publishedAt&' + 'page=' + page + '&' + 'pageSize=5&language=en&' + 'apiKey=3b214239993247f18926b8fab6ee014f';
+            url = 'https://newsapi.org/v2/everything?' + 'q=' + search + '&' + 'sortBy=publishedAt&' + 'page=' + page + '&' + 'pageSize=10&language=en&' + 'apiKey=3b214239993247f18926b8fab6ee014f';
             _context.next = 6;
             return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url);
 
@@ -2069,6 +2114,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-lazy-load":
+/*!**********************************!*\
+  !*** external "react-lazy-load" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-lazy-load");
 
 /***/ }),
 

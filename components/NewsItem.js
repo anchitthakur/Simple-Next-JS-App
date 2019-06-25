@@ -1,17 +1,20 @@
-const imgStyle = {
-    fontSize: '15px',
-    textAlign: 'center'
-  };
+import LazyLoad from 'react-lazy-load';
 
-const NewsItem = ({article}) => {
+const imgStyle = {
+    "width": '100%',
+};
+
+const NewsItem = ({ article }) => {
     return (
         <>
-                <div className="card mb-3">
+            <div className="card mb-3">
                 <div className="card-body">
                     <h5 className="card-title"><b><u>{article.title}</u></b></h5>
                     <h6 className="card-subtitle text-muted">{article.publishedAt}</h6>
                 </div>
-                <img style= {imgStyle} src={article.urlToImage} alt="Card image" />
+                <LazyLoad debounce={true} offsetVertical={600}>
+                    <img style={imgStyle} src={article.urlToImage} onError={(e) => { e.target.onerror = null; e.target.src = "/static/img.png" }} />
+                </LazyLoad>
                 <div className="card-body">
                     <b><p className="card-text">{article.description}</p></b>
                 </div>
@@ -19,10 +22,10 @@ const NewsItem = ({article}) => {
                     <li className="list-group-item"><strong>Source : </strong><u>{article.source.name}</u></li>
                 </ul>
                 <div className="card-body">
-                    <a href={article.url} className="card-link"  target="_blank" rel="noopener" >Full Article..</a>
+                    <a href={article.url} className="card-link" target="_blank" rel="noreferrer" >Full Article..</a>
                 </div>
                 <div className="card-footer text-muted">
-                    </div>
+                </div>
             </div>
         </>
     );
