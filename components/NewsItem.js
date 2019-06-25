@@ -13,7 +13,7 @@ const NewsItem = ({ article }) => {
                     <h6 className="card-subtitle text-muted">{article.publishedAt}</h6>
                 </div>
                 <LazyLoad debounce={true} offsetVertical={600}>
-                    <img style={imgStyle} src={article.urlToImage} onError={(e) => { e.target.onerror = null; e.target.src = "/static/img.png" }} />
+                    <img style={imgStyle} src={article.urlToImage?article.urlToImage:"/static/img.png"} onError={(e) => { e.target.onerror = null; e.target.src = "/static/img.png" }} />
                 </LazyLoad>
                 <div className="card-body">
                     <b><p className="card-text">{article.description}</p></b>

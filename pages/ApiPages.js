@@ -12,7 +12,7 @@ const ApiPages = (props) => {
     const mounted = useRef();
     useEffect(() => {
         if (!props.isFetched || mounted.current)
-            ApiPages.getInitialProps({ page: props.page, search: props.search, flag: 1 })
+            ApiPages.getInitialProps({ page: props.page, search: props.search, isUser: 1 })
                 .then(json => setData(json.data))
         else
             mounted.current = true;
@@ -35,9 +35,9 @@ const ApiPages = (props) => {
         </>)
 }
 
-ApiPages.getInitialProps = async function ({ search = 'tech', page = 1, flag = 0 }) {
+ApiPages.getInitialProps = async function ({ search = 'tech', page = 1, isUser = 0 }) {
 
-    if (flag == 0 && !(typeof window === 'undefined'))
+    if (isUser == 0 && !(typeof window === 'undefined'))
         return { data: {}, isFetched: false }
 
     var url = 'https://newsapi.org/v2/everything?' +
