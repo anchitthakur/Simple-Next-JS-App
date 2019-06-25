@@ -19,7 +19,7 @@ const NewsItem = ({article}) => {
                     <li className="list-group-item"><strong>Source : </strong><u>{article.source.name}</u></li>
                 </ul>
                 <div className="card-body">
-                    <a href={article.url} className="card-link"  target="_blank" >Full Article..</a>
+                    <a href={article.url} className="card-link"  target="_blank" rel="noopener" >Full Article..</a>
                 </div>
                 <div className="card-footer text-muted">
                     </div>

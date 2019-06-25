@@ -5,4 +5,4 @@ import PageReducer from './pageReducer'
 export default combineReducers({
     pages: PagesReducer,
     page: PageReducer
-});
+}); 

@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import fetch from 'isomorphic-unfetch'
-import { useEffect, useState,useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { connect } from 'react-redux'
 import Api from '../components/Api';
 import Layout from '../components/Layout';
@@ -11,11 +11,11 @@ const ApiPages = (props) => {
     const [data, setData] = useState(props.data)
     const mounted = useRef();
     useEffect(() => {
-        if (!mounted.current)
-            mounted.current = true
-        else
-            ApiPages.getInitialProps({ page: props.page, search: props.search })
+        if (!props.isFetched || mounted.current)
+            ApiPages.getInitialProps({ page: props.page, search: props.search, flag: 1 })
                 .then(json => setData(json.data))
+        else
+            mounted.current = true;
     }, [props.page, props.search])
 
     return (
@@ -35,7 +35,11 @@ const ApiPages = (props) => {
         </>)
 }
 
-ApiPages.getInitialProps = async function ({ search = 'tech', page = '1' }) {
+ApiPages.getInitialProps = async function ({ search = 'tech', page = 1, flag = 0 }) {
+
+    if (flag == 0 && !(typeof window === 'undefined'))
+        return { data: {}, isFetched: false }
+
     var url = 'https://newsapi.org/v2/everything?' +
         'q=' + search + '&' +
         'sortBy=publishedAt&' +
@@ -44,7 +48,7 @@ ApiPages.getInitialProps = async function ({ search = 'tech', page = '1' }) {
         'apiKey=3b214239993247f18926b8fab6ee014f';
     const res = await fetch(url);
     const json = await res.json()
-    return { data: json }
+    return { data: json, isFetched: true }
 
 }
 const mapStateToProps = state => ({
