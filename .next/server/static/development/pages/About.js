@@ -1073,13 +1073,19 @@ function About() {
       lineNumber: 10
     },
     __self: this
-  }, "About Us"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, "About"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, "This is a website that uses https://newsapi.org API to get the latest news "));
+  }, "This is a website that uses https://newsapi.org API to get the latest news "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, "github: https://github.com/anchitthakur/Simple-next-js-app "));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (About);

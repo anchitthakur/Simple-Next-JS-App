@@ -7,8 +7,9 @@ function About() {
         <Head>
             <meta keywords="About" />
         </Head>
-        <h2>About Us</h2>
+        <h2>About</h2>
         <p>This is a website that uses https://newsapi.org API to get the latest news </p>
+        <p>github: https://github.com/anchitthakur/Simple-next-js-app </p>
     </Layout>
 }
 
