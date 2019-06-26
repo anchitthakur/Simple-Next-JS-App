@@ -10121,7 +10121,7 @@ function index() {
         Document: _document_default.a,
         buildManifest: build_manifest,
         reactLoadableManifest: react_loadable_manifest,
-        buildId: "vD0HW5uiD860GtRsEAZ1Q",
+        buildId: "42FXFWvEsWbVCshBDoxBX",
         dynamicBuildId: false,
         assetPrefix: "",
         ampBindInitData: false
