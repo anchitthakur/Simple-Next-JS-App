@@ -18,7 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_NewsItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/NewsItem */ "./components/NewsItem.js");
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Api.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\Api.js";
 
 
 
@@ -94,7 +94,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Layout.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\Layout.js";
 
 
 
@@ -112,10 +112,37 @@ var Layout = function Layout(props) {
       lineNumber: 6
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+    integrity: "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo",
+    crossOrigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    src: "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",
+    integrity: "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1",
+    crossOrigin: "anonymous",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("script", {
+    src: "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",
+    integrity: "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM",
+    crossOrigin: "anonymous",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
     },
     __self: this
   }, "My App"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("link", {
@@ -123,27 +150,27 @@ var Layout = function Layout(props) {
     href: "/static/bootstrap.min.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 23
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 26
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 28
     },
     __self: this
   }, props.children));
@@ -168,7 +195,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Navbar.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\Navbar.js";
 
 
 
@@ -328,7 +355,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_lazy_load__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-lazy-load */ "./node_modules/react-lazy-load/lib/LazyLoad.js");
 /* harmony import */ var react_lazy_load__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_lazy_load__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\NewsItem.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\NewsItem.js";
 
 
 var imgStyle = {
@@ -490,7 +517,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pagesActions */ "./components/actions/pagesActions.js");
 /* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Pagination.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\Pagination.js";
 
 
 
@@ -669,7 +696,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Search.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\Search.js";
 
 
 
@@ -8194,10 +8221,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js!./":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js ***!
-  \*****************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CApiPages.js!./":
+/*!*******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CApiPages.js ***!
+  \*******************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16026,7 +16053,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\pages\\ApiPages.js";
 
 
 
@@ -16183,14 +16210,14 @@ var mapStateToProps = function mapStateToProps(state) {
 
 /***/ }),
 
-/***/ 0:
-/*!*********************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js ***!
-  \*********************************************************************************************************************************/
+/***/ 2:
+/*!***********************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CApiPages.js ***!
+  \***********************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CApiPages.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CApiPages.js!./");
 
 
 /***/ }),
@@ -16206,5 +16233,5 @@ module.exports = dll_e9ced4903ed7b2c99d94;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=ApiPages.js.map
