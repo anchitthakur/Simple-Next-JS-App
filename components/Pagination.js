@@ -25,7 +25,7 @@ const Pagination = (props) => {
             <li className={pages[4] === props.page ? "page-item active" : "page-item"}>
                 <a className="page-link" onClick={() => props.changePage(pages[4])}>{pages[4]}</a>
             </li>
-            <li className={pages[4] === 20 ? "page-item disabled" : "page-item"}>
+            <li className={pages[4] === 10 ? "page-item disabled" : "page-item"}>
                 <a className="page-link" enabled="true" onClick={() => props.increasePages(pages)}>+</a>
             </li>
         </ul>

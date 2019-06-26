@@ -8,8 +8,8 @@ function About() {
             <meta keywords="About" />
         </Head>
         <h2>About</h2>
-        <p>This is a website that uses https://newsapi.org API to get the latest news </p>
-        <p>github: https://github.com/anchitthakur/Simple-next-js-app </p>
+        <p>This is a website that uses <a href = "https://newsapi.org">https://newsapi.org</a> API to get the latest news </p>
+        <p>Source code: <a href = "https://github.com/anchitthakur/Simple-next-js-app">https://github.com/anchitthakur/Simple-next-js-app</a> </p>
     </Layout>
 }
 
