@@ -14,7 +14,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Navbar */ "./components/Navbar.js");
-var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\Layout.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Layout.js";
 
 
 
@@ -115,7 +115,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\components\\Navbar.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Navbar.js";
 
 
 
@@ -6445,10 +6445,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CAbout.js!./":
-/*!*************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CAbout.js ***!
-  \*************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CAbout.js!./":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CAbout.js ***!
+  \***********************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10718,7 +10718,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\pages\\About.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\About.js";
 
 
 
@@ -10782,14 +10782,14 @@ function About() {
 
 /***/ }),
 
-/***/ 0:
-/*!*****************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CAbout.js ***!
-  \*****************************************************************************************************************************/
+/***/ 2:
+/*!***************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CAbout.js ***!
+  \***************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CAbout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cclone3%5Cpages%5CAbout.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CAbout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2FAbout&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CAbout.js!./");
 
 
 /***/ }),
@@ -10805,5 +10805,5 @@ module.exports = dll_e9ced4903ed7b2c99d94;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=About.js.map

@@ -275,7 +275,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\lib\\with-redux-store.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\lib\\with-redux-store.js";
 
 
 var isServer = typeof window === 'undefined';
@@ -1353,7 +1353,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "C:\\Users\\im\\Desktop\\clone3\\pages\\_app.js";
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\_app.js";
 
 
 
