@@ -4,11 +4,10 @@ import NewsItem from "../components/NewsItem";
 
 function Api(props) {
   let arr = [];
-  let n = 0;
-  if (props.data.status === "ok")
-    for (let i of props.data.articles) {
-      arr.push(<NewsItem key={n++} article={i} />);
-    }
+  let cnt=0
+  for (let i of props.data) {
+    arr.push(<NewsItem key={cnt++} article={i} />);
+  }
   return <>{arr}</>;
 }
 

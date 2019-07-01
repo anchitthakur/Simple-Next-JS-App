@@ -120,38 +120,35 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Api.js";
 
 function Api(props) {
   var arr = [];
-  var n = 0;
+  var cnt = 0;
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
 
-  if (props.data.status === "ok") {
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
+  try {
+    for (var _iterator = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(props.data), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var i = _step.value;
+      arr.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_NewsItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        key: cnt++,
+        article: i,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }));
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
     try {
-      for (var _iterator = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(props.data.articles), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var i = _step.value;
-        arr.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_NewsItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          key: n++,
-          article: i,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 10
-          },
-          __self: this
-        }));
+      if (!_iteratorNormalCompletion && _iterator.return != null) {
+        _iterator.return();
       }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
     } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
+      if (_didIteratorError) {
+        throw _iteratorError;
       }
     }
   }
@@ -596,185 +593,6 @@ var NewsItem = function NewsItem(_ref) {
 
 /***/ }),
 
-/***/ "./components/Pagination.js":
-/*!**********************************!*\
-  !*** ./components/Pagination.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "prop-types");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pagesActions */ "./components/actions/pagesActions.js");
-/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Pagination.js";
-
-
-
-
-
-
-var Pagination = function Pagination(props) {
-  var pages = props.pages;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "pagination",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[0] === 1 ? "page-item disabled" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.decreasePages(pages);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "-")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[0] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[0]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, pages[0])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[1] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[1]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, pages[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[2] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[2]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, pages[2])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[3] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[3]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, pages[3])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[4] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[4]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, pages[4])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[4] === 10 ? "page-item disabled" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    enabled: "true",
-    onClick: function onClick() {
-      return props.increasePages(pages);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "+")));
-};
-
-Pagination.propTypes = {
-  increasePages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  decreasePages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  changePage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  pages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array.isRequired,
-  page: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired
-};
-
-var mapStateToProps = function mapStateToProps(state) {
-  return {
-    pages: state.pages.pages,
-    page: state.page.page
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, {
-  decreasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__["decreasePages"],
-  increasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__["increasePages"],
-  changePage: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__["changePage"]
-})(Pagination));
-
-/***/ }),
-
 /***/ "./components/Search.js":
 /*!******************************!*\
   !*** ./components/Search.js ***!
@@ -887,53 +705,6 @@ var changeSearch = function changeSearch(s) {
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_SEARCH"],
       payload: s
-    });
-  };
-};
-
-/***/ }),
-
-/***/ "./components/actions/pagesActions.js":
-/*!********************************************!*\
-  !*** ./components/actions/pagesActions.js ***!
-  \********************************************/
-/*! exports provided: increasePages, decreasePages */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "increasePages", function() { return increasePages; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "decreasePages", function() { return decreasePages; });
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./types */ "./components/actions/types.js");
-
-
-var increasePages = function increasePages(pages) {
-  return function (dispatch) {
-    var arr = [];
-
-    for (var i in pages) {
-      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) + 1);
-    }
-
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_1__["INCREASE_PAGES"],
-      payload: arr
-    });
-  };
-};
-var decreasePages = function decreasePages(pages) {
-  return function (dispatch) {
-    var arr = [];
-
-    for (var i in pages) {
-      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) - 1);
-    }
-
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_1__["DECREASE_PAGES"],
-      payload: arr
     });
   };
 };
@@ -1731,19 +1502,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "react-redux");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
-/* harmony import */ var _components_Pagination__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Pagination */ "./components/Pagination.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "react-redux");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-infinite-scroll-component */ "react-infinite-scroll-component");
+/* harmony import */ var react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
+/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
+
 
 
 
@@ -1758,85 +1534,146 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
 
 
 
+
 var ApiPages = function ApiPages(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(props.data),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
+  console.log(props);
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(props.data),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
       data = _useState2[0],
       setData = _useState2[1];
 
-  var mounted = Object(react__WEBPACK_IMPORTED_MODULE_3__["useRef"])();
-  Object(react__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
-    if (!props.isFetched || mounted.current) ApiPages.getInitialProps({
-      page: props.page,
-      search: props.search,
-      isUser: 1
-    }).then(function (json) {
-      return setData(json.data);
-    });else mounted.current = true;
+  var test = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(0);
+  var mounted = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(0);
+  Object(react__WEBPACK_IMPORTED_MODULE_4__["useEffect"])(function () {
+    console.log("hmm");
+    test.current = 1;
+  }, [props.search]);
+  Object(react__WEBPACK_IMPORTED_MODULE_4__["useEffect"])(function () {
+    if (!props.isFetched || mounted.current) {
+      if (test.current == 0) {
+        ApiPages.getInitialProps({
+          page: test.current ? 1 : props.page,
+          search: props.search,
+          isUser: 1
+        }).then(function (json) {
+          console.log(test.current);
+          var temp = jsonConcat(data, json.data);
+          setData(temp);
+        });
+      } else {
+        test.current = 0;
+        setData([]);
+        props.changePage(1);
+      }
+    } else {
+      mounted.current = 1;
+      test.current = 0;
+    }
   }, [props.page, props.search]);
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+
+  var fetchMoreData = function fetchMoreData() {
+    console.log("called");
+    props.changePage(props.page + 1);
+  };
+
+  function jsonConcat(o1, o2) {
+    var t = [];
+
+    for (var key in o1) {
+      t[_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(key)] = o1[key];
+    }
+
+    for (var key in o2) {
+      t[_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(key) + _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(data.length)] = o2[key];
+    }
+
+    return t;
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 63
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("meta", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
     keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 64
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 66
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 67
     },
     __self: this
-  }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", {
+  }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 68
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 69
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 70
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    dataLength: data.length,
+    next: fetchMoreData,
+    hasMore: data.length === 100 ? false : true,
+    loader: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, "Loading..."),
+    endMessage: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+      style: {
+        textAlign: "center"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("b", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }, "Yay! You have seen it all")),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 71
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_9__["default"], {
     data: data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 82
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  })));
+  }))));
 };
 
 ApiPages.getInitialProps =
@@ -1851,22 +1688,22 @@ function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _ref$search = _ref.search, search = _ref$search === void 0 ? 'tech' : _ref$search, _ref$page = _ref.page, page = _ref$page === void 0 ? 1 : _ref$page, _ref$isUser = _ref.isUser, isUser = _ref$isUser === void 0 ? 0 : _ref$isUser;
+            _ref$search = _ref.search, search = _ref$search === void 0 ? "tech" : _ref$search, _ref$page = _ref.page, page = _ref$page === void 0 ? 1 : _ref$page, _ref$isUser = _ref.isUser, isUser = _ref$isUser === void 0 ? 0 : _ref$isUser;
 
-            if (!(isUser == 0 && !(typeof window === 'undefined'))) {
+            if (!(isUser == 0 && !(typeof window === "undefined"))) {
               _context.next = 3;
               break;
             }
 
             return _context.abrupt("return", {
-              data: {},
+              data: [],
               isFetched: false
             });
 
           case 3:
-            url = 'https://newsapi.org/v2/everything?' + 'q=' + search + '&' + 'sortBy=publishedAt&' + 'page=' + page + '&' + 'pageSize=10&language=en&' + 'apiKey=3b214239993247f18926b8fab6ee014f';
+            url = "https://newsapi.org/v2/everything?" + "q=" + search + "&" + "sortBy=publishedAt&" + "page=" + page + "&" + "pageSize=10&language=en&" + "apiKey=3b214239993247f18926b8fab6ee014f";
             _context.next = 6;
-            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url);
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()(url);
 
           case 6:
             res = _context.sent;
@@ -1876,7 +1713,7 @@ function () {
           case 9:
             json = _context.sent;
             return _context.abrupt("return", {
-              data: json,
+              data: json.articles,
               isFetched: true
             });
 
@@ -1900,7 +1737,9 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, null)(ApiPages));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_7__["connect"])(mapStateToProps, {
+  changePage: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_12__["changePage"]
+})(ApiPages));
 
 /***/ }),
 
@@ -2111,6 +1950,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-infinite-scroll-component":
+/*!**************************************************!*\
+  !*** external "react-infinite-scroll-component" ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-infinite-scroll-component");
 
 /***/ }),
 

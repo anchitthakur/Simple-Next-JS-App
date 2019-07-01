@@ -26,38 +26,35 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Api.js";
 
 function Api(props) {
   var arr = [];
-  var n = 0;
+  var cnt = 0;
+  var _iteratorNormalCompletion = true;
+  var _didIteratorError = false;
+  var _iteratorError = undefined;
 
-  if (props.data.status === "ok") {
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
+  try {
+    for (var _iterator = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(props.data), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      var i = _step.value;
+      arr.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_NewsItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        key: cnt++,
+        article: i,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        },
+        __self: this
+      }));
+    }
+  } catch (err) {
+    _didIteratorError = true;
+    _iteratorError = err;
+  } finally {
     try {
-      for (var _iterator = _babel_runtime_corejs2_core_js_get_iterator__WEBPACK_IMPORTED_MODULE_0___default()(props.data.articles), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var i = _step.value;
-        arr.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_components_NewsItem__WEBPACK_IMPORTED_MODULE_4__["default"], {
-          key: n++,
-          article: i,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 10
-          },
-          __self: this
-        }));
+      if (!_iteratorNormalCompletion && _iterator.return != null) {
+        _iterator.return();
       }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
     } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator.return != null) {
-          _iterator.return();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
+      if (_didIteratorError) {
+        throw _iteratorError;
       }
     }
   }
@@ -502,184 +499,6 @@ var NewsItem = function NewsItem(_ref) {
 
 /***/ }),
 
-/***/ "./components/Pagination.js":
-/*!**********************************!*\
-  !*** ./components/Pagination.js ***!
-  \**********************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/actions/pagesActions */ "./components/actions/pagesActions.js");
-/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Pagination.js";
-
-
-
-
-
-
-var Pagination = function Pagination(props) {
-  var pages = props.pages;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "pagination",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[0] === 1 ? "page-item disabled" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.decreasePages(pages);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "-")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[0] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[0]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  }, pages[0])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[1] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[1]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
-  }, pages[1])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[2] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[2]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, pages[2])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[3] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[3]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
-    },
-    __self: this
-  }, pages[3])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[4] === props.page ? "page-item active" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    onClick: function onClick() {
-      return props.changePage(pages[4]);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
-    },
-    __self: this
-  }, pages[4])), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: pages[4] === 10 ? "page-item disabled" : "page-item",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "page-link",
-    enabled: "true",
-    onClick: function onClick() {
-      return props.increasePages(pages);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, "+")));
-};
-
-Pagination.propTypes = {
-  increasePages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  decreasePages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  changePage: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.func.isRequired,
-  pages: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array.isRequired,
-  page: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number.isRequired
-};
-
-var mapStateToProps = function mapStateToProps(state) {
-  return {
-    pages: state.pages.pages,
-    page: state.page.page
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_1__["connect"])(mapStateToProps, {
-  decreasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__["decreasePages"],
-  increasePages: _components_actions_pagesActions__WEBPACK_IMPORTED_MODULE_3__["increasePages"],
-  changePage: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_4__["changePage"]
-})(Pagination));
-
-/***/ }),
-
 /***/ "./components/Search.js":
 /*!******************************!*\
   !*** ./components/Search.js ***!
@@ -791,53 +610,6 @@ var changeSearch = function changeSearch(s) {
     dispatch({
       type: _types__WEBPACK_IMPORTED_MODULE_0__["CHANGE_SEARCH"],
       payload: s
-    });
-  };
-};
-
-/***/ }),
-
-/***/ "./components/actions/pagesActions.js":
-/*!********************************************!*\
-  !*** ./components/actions/pagesActions.js ***!
-  \********************************************/
-/*! exports provided: increasePages, decreasePages */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "increasePages", function() { return increasePages; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "decreasePages", function() { return decreasePages; });
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./types */ "./components/actions/types.js");
-
-
-var increasePages = function increasePages(pages) {
-  return function (dispatch) {
-    var arr = [];
-
-    for (var i in pages) {
-      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) + 1);
-    }
-
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_1__["INCREASE_PAGES"],
-      payload: arr
-    });
-  };
-};
-var decreasePages = function decreasePages(pages) {
-  return function (dispatch) {
-    var arr = [];
-
-    for (var i in pages) {
-      arr.push(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(pages[i]) - 1);
-    }
-
-    dispatch({
-      type: _types__WEBPACK_IMPORTED_MODULE_1__["DECREASE_PAGES"],
-      payload: arr
     });
   };
 };
@@ -10629,6 +10401,694 @@ module.exports = (__webpack_require__(/*! dll-reference dll_e9ced4903ed7b2c99d94
 
 /***/ }),
 
+/***/ "./node_modules/react-infinite-scroll-component/lib/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/react-infinite-scroll-component/lib/index.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(true)
+		module.exports = factory(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+	else {}
+})(this, function(__WEBPACK_EXTERNAL_MODULE_8__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+	var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var _react = __webpack_require__(8);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(6);
+
+	var _propTypes2 = _interopRequireDefault(_propTypes);
+
+	var _utilsThrottle = __webpack_require__(2);
+
+	var _utilsThrottle2 = _interopRequireDefault(_utilsThrottle);
+
+	var _utilsThreshold = __webpack_require__(1);
+
+	var InfiniteScroll = (function (_Component) {
+	  _inherits(InfiniteScroll, _Component);
+
+	  function InfiniteScroll(props) {
+	    _classCallCheck(this, InfiniteScroll);
+
+	    _get(Object.getPrototypeOf(InfiniteScroll.prototype), "constructor", this).call(this);
+	    this.state = {
+	      showLoader: false,
+	      lastScrollTop: 0,
+	      actionTriggered: false,
+	      pullToRefreshThresholdBreached: false
+	    };
+	    // variables to keep track of pull down behaviour
+	    this.startY = 0;
+	    this.currentY = 0;
+	    this.dragging = false;
+	    // will be populated in componentDidMount
+	    // based on the height of the pull down element
+	    this.maxPullDownDistance = 0;
+
+	    this.onScrollListener = this.onScrollListener.bind(this);
+	    this.throttledOnScrollListener = (0, _utilsThrottle2["default"])(this.onScrollListener, 150).bind(this);
+	    this.onStart = this.onStart.bind(this);
+	    this.onMove = this.onMove.bind(this);
+	    this.onEnd = this.onEnd.bind(this);
+	    this.getScrollableTarget = this.getScrollableTarget.bind(this);
+	  }
+
+	  _createClass(InfiniteScroll, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      this._scrollableNode = this.getScrollableTarget();
+	      this.el = this.props.height ? this._infScroll : this._scrollableNode || window;
+	      this.el.addEventListener("scroll", this.throttledOnScrollListener);
+
+	      if (typeof this.props.initialScrollY === "number" && this.el.scrollHeight > this.props.initialScrollY) {
+	        this.el.scrollTo(0, this.props.initialScrollY);
+	      }
+
+	      if (this.props.pullDownToRefresh) {
+	        this.el.addEventListener("touchstart", this.onStart);
+	        this.el.addEventListener("touchmove", this.onMove);
+	        this.el.addEventListener("touchend", this.onEnd);
+
+	        this.el.addEventListener("mousedown", this.onStart);
+	        this.el.addEventListener("mousemove", this.onMove);
+	        this.el.addEventListener("mouseup", this.onEnd);
+
+	        // get BCR of pullDown element to position it above
+	        this.maxPullDownDistance = this._pullDown.firstChild.getBoundingClientRect().height;
+	        this.forceUpdate();
+
+	        if (typeof this.props.refreshFunction !== "function") {
+	          throw new Error("Mandatory prop \"refreshFunction\" missing.\n          Pull Down To Refresh functionality will not work\n          as expected. Check README.md for usage'");
+	        }
+	      }
+	    }
+	  }, {
+	    key: "componentWillUnmount",
+	    value: function componentWillUnmount() {
+	      this.el.removeEventListener("scroll", this.throttledOnScrollListener);
+
+	      if (this.props.pullDownToRefresh) {
+	        this.el.removeEventListener("touchstart", this.onStart);
+	        this.el.removeEventListener("touchmove", this.onMove);
+	        this.el.removeEventListener("touchend", this.onEnd);
+
+	        this.el.removeEventListener("mousedown", this.onStart);
+	        this.el.removeEventListener("mousemove", this.onMove);
+	        this.el.removeEventListener("mouseup", this.onEnd);
+	      }
+	    }
+	  }, {
+	    key: "componentWillReceiveProps",
+	    value: function componentWillReceiveProps(props) {
+	      // do nothing when dataLength and key are unchanged
+	      if (this.props.key === props.key && this.props.dataLength === props.dataLength) return;
+
+	      // update state when new data was sent in
+	      this.setState({
+	        showLoader: false,
+	        actionTriggered: false,
+	        pullToRefreshThresholdBreached: false
+	      });
+	    }
+	  }, {
+	    key: "getScrollableTarget",
+	    value: function getScrollableTarget() {
+	      if (this.props.scrollableTarget instanceof HTMLElement) return this.props.scrollableTarget;
+	      if (typeof this.props.scrollableTarget === 'string') {
+	        return document.getElementById(this.props.scrollableTarget);
+	      }
+	      if (this.props.scrollableTarget === null) {
+	        console.warn("You are trying to pass scrollableTarget but it is null. This might\n        happen because the element may not have been added to DOM yet.\n        See https://github.com/ankeetmaini/react-infinite-scroll-component/issues/59 for more info.\n      ");
+	      }
+	      return null;
+	    }
+	  }, {
+	    key: "onStart",
+	    value: function onStart(evt) {
+	      if (this.state.lastScrollTop) return;
+
+	      this.dragging = true;
+	      this.startY = evt.pageY || evt.touches[0].pageY;
+	      this.currentY = this.startY;
+
+	      this._infScroll.style.willChange = "transform";
+	      this._infScroll.style.transition = "transform 0.2s cubic-bezier(0,0,0.31,1)";
+	    }
+	  }, {
+	    key: "onMove",
+	    value: function onMove(evt) {
+	      if (!this.dragging) return;
+	      this.currentY = evt.pageY || evt.touches[0].pageY;
+
+	      // user is scrolling down to up
+	      if (this.currentY < this.startY) return;
+
+	      if (this.currentY - this.startY >= this.props.pullDownToRefreshThreshold) {
+	        this.setState({
+	          pullToRefreshThresholdBreached: true
+	        });
+	      }
+
+	      // so you can drag upto 1.5 times of the maxPullDownDistance
+	      if (this.currentY - this.startY > this.maxPullDownDistance * 1.5) return;
+
+	      this._infScroll.style.overflow = "visible";
+	      this._infScroll.style.transform = "translate3d(0px, " + (this.currentY - this.startY) + "px, 0px)";
+	    }
+	  }, {
+	    key: "onEnd",
+	    value: function onEnd(evt) {
+	      var _this = this;
+
+	      this.startY = 0;
+	      this.currentY = 0;
+
+	      this.dragging = false;
+
+	      if (this.state.pullToRefreshThresholdBreached) {
+	        this.props.refreshFunction && this.props.refreshFunction();
+	      }
+
+	      requestAnimationFrame(function () {
+	        // this._infScroll
+	        if (_this._infScroll) {
+	          _this._infScroll.style.overflow = "auto";
+	          _this._infScroll.style.transform = "none";
+	          _this._infScroll.style.willChange = "none";
+	        }
+	      });
+	    }
+	  }, {
+	    key: "isElementAtBottom",
+	    value: function isElementAtBottom(target) {
+	      var scrollThreshold = arguments.length <= 1 || arguments[1] === undefined ? 0.8 : arguments[1];
+
+	      var clientHeight = target === document.body || target === document.documentElement ? window.screen.availHeight : target.clientHeight;
+
+	      var threshold = (0, _utilsThreshold.parseThreshold)(scrollThreshold);
+
+	      if (threshold.unit === _utilsThreshold.ThresholdUnits.Pixel) {
+	        return target.scrollTop + clientHeight >= target.scrollHeight - threshold.value;
+	      }
+
+	      return target.scrollTop + clientHeight >= threshold.value / 100 * target.scrollHeight;
+	    }
+	  }, {
+	    key: "onScrollListener",
+	    value: function onScrollListener(event) {
+	      var _this2 = this;
+
+	      if (typeof this.props.onScroll === "function") {
+	        // Execute this callback in next tick so that it does not affect the
+	        // functionality of the library.
+	        setTimeout(function () {
+	          return _this2.props.onScroll(event);
+	        }, 0);
+	      }
+
+	      var target = this.props.height || this._scrollableNode ? event.target : document.documentElement.scrollTop ? document.documentElement : document.body;
+
+	      // return immediately if the action has already been triggered,
+	      // prevents multiple triggers.
+	      if (this.state.actionTriggered) return;
+
+	      var atBottom = this.isElementAtBottom(target, this.props.scrollThreshold);
+
+	      // call the `next` function in the props to trigger the next data fetch
+	      if (atBottom && this.props.hasMore) {
+	        this.setState({ actionTriggered: true, showLoader: true });
+	        this.props.next();
+	      }
+	      this.setState({ lastScrollTop: target.scrollTop });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      var _this3 = this;
+
+	      var style = _extends({
+	        height: this.props.height || "auto",
+	        overflow: "auto",
+	        WebkitOverflowScrolling: "touch"
+	      }, this.props.style);
+	      var hasChildren = this.props.hasChildren || !!(this.props.children && this.props.children.length);
+
+	      // because heighted infiniteScroll visualy breaks
+	      // on drag down as overflow becomes visible
+	      var outerDivStyle = this.props.pullDownToRefresh && this.props.height ? { overflow: "auto" } : {};
+	      return _react2["default"].createElement(
+	        "div",
+	        { style: outerDivStyle },
+	        _react2["default"].createElement(
+	          "div",
+	          {
+	            className: "infinite-scroll-component " + (this.props.className || ''),
+	            ref: function (infScroll) {
+	              return _this3._infScroll = infScroll;
+	            },
+	            style: style
+	          },
+	          this.props.pullDownToRefresh && _react2["default"].createElement(
+	            "div",
+	            {
+	              style: { position: "relative" },
+	              ref: function (pullDown) {
+	                return _this3._pullDown = pullDown;
+	              }
+	            },
+	            _react2["default"].createElement(
+	              "div",
+	              {
+	                style: {
+	                  position: "absolute",
+	                  left: 0,
+	                  right: 0,
+	                  top: -1 * this.maxPullDownDistance
+	                }
+	              },
+	              !this.state.pullToRefreshThresholdBreached && this.props.pullDownToRefreshContent,
+	              this.state.pullToRefreshThresholdBreached && this.props.releaseToRefreshContent
+	            )
+	          ),
+	          this.props.children,
+	          !this.state.showLoader && !hasChildren && this.props.hasMore && this.props.loader,
+	          this.state.showLoader && this.props.hasMore && this.props.loader,
+	          !this.props.hasMore && this.props.endMessage
+	        )
+	      );
+	    }
+	  }]);
+
+	  return InfiniteScroll;
+	})(_react.Component);
+
+	exports["default"] = InfiniteScroll;
+
+	InfiniteScroll.defaultProps = {
+	  pullDownToRefreshContent: _react2["default"].createElement(
+	    "h3",
+	    null,
+	    "Pull down to refresh"
+	  ),
+	  releaseToRefreshContent: _react2["default"].createElement(
+	    "h3",
+	    null,
+	    "Release to refresh"
+	  ),
+	  pullDownToRefreshThreshold: 100,
+	  disableBrowserPullToRefresh: true
+	};
+
+	InfiniteScroll.propTypes = {
+	  next: _propTypes2["default"].func,
+	  hasMore: _propTypes2["default"].bool,
+	  children: _propTypes2["default"].node,
+	  loader: _propTypes2["default"].node.isRequired,
+	  scrollThreshold: _propTypes2["default"].oneOfType([_propTypes2["default"].number, _propTypes2["default"].string]),
+	  endMessage: _propTypes2["default"].node,
+	  style: _propTypes2["default"].object,
+	  height: _propTypes2["default"].number,
+	  scrollableTarget: _propTypes2["default"].node,
+	  hasChildren: _propTypes2["default"].bool,
+	  pullDownToRefresh: _propTypes2["default"].bool,
+	  pullDownToRefreshContent: _propTypes2["default"].node,
+	  releaseToRefreshContent: _propTypes2["default"].node,
+	  pullDownToRefreshThreshold: _propTypes2["default"].number,
+	  refreshFunction: _propTypes2["default"].func,
+	  onScroll: _propTypes2["default"].func,
+	  dataLength: _propTypes2["default"].number.isRequired,
+	  key: _propTypes2["default"].string
+	};
+	module.exports = exports["default"];
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, '__esModule', {
+	  value: true
+	});
+	exports.parseThreshold = parseThreshold;
+	var ThresholdUnits = {
+	  Pixel: 'Pixel',
+	  Percent: 'Percent'
+	};
+
+	exports.ThresholdUnits = ThresholdUnits;
+	var defaultThreshold = {
+	  unit: ThresholdUnits.Percent,
+	  value: 0.8
+	};
+
+	function parseThreshold(scrollThreshold) {
+	  if (typeof scrollThreshold === "number") {
+	    return {
+	      unit: ThresholdUnits.Percent,
+	      value: scrollThreshold * 100
+	    };
+	  }
+
+	  if (typeof scrollThreshold === "string") {
+	    if (scrollThreshold.match(/^(\d*(\.\d+)?)px$/)) {
+	      return {
+	        unit: ThresholdUnits.Pixel,
+	        value: parseFloat(scrollThreshold)
+	      };
+	    }
+
+	    if (scrollThreshold.match(/^(\d*(\.\d+)?)%$/)) {
+	      return {
+	        unit: ThresholdUnits.Percent,
+	        value: parseFloat(scrollThreshold)
+	      };
+	    }
+
+	    console.warn('scrollThreshold format is invalid. Valid formats: "120px", "50%"...');
+
+	    return defaultThreshold;
+	  }
+
+	  console.warn('scrollThreshold should be string or number');
+
+	  return defaultThreshold;
+	}
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+	// https://remysharp.com/2010/07/21/throttling-function-calls
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	exports["default"] = throttle;
+
+	function throttle(fn, threshhold, scope) {
+	  threshhold || (threshhold = 250);
+	  var last, deferTimer;
+	  return function () {
+	    var context = scope || this;
+
+	    var now = +new Date(),
+	        args = arguments;
+	    if (last && now < last + threshhold) {
+	      // hold on to it
+	      clearTimeout(deferTimer);
+	      deferTimer = setTimeout(function () {
+	        last = now;
+	        fn.apply(context, args);
+	      }, threshhold);
+	    } else {
+	      last = now;
+	      fn.apply(context, args);
+	    }
+	  };
+	}
+
+	module.exports = exports["default"];
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+	"use strict";
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 *
+	 * 
+	 */
+
+	function makeEmptyFunction(arg) {
+	  return function () {
+	    return arg;
+	  };
+	}
+
+	/**
+	 * This function accepts and discards inputs; it has no side effects. This is
+	 * primarily useful idiomatically for overridable function endpoints which
+	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+	 */
+	var emptyFunction = function emptyFunction() {};
+
+	emptyFunction.thatReturns = makeEmptyFunction;
+	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+	emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+	emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+	emptyFunction.thatReturnsThis = function () {
+	  return this;
+	};
+	emptyFunction.thatReturnsArgument = function (arg) {
+	  return arg;
+	};
+
+	module.exports = emptyFunction;
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright (c) 2013-present, Facebook, Inc.
+	 *
+	 * This source code is licensed under the MIT license found in the
+	 * LICENSE file in the root directory of this source tree.
+	 *
+	 */
+
+	'use strict';
+
+	/**
+	 * Use invariant() to assert state which your program assumes to be true.
+	 *
+	 * Provide sprintf-style format (only %s is supported) and arguments
+	 * to provide information about what broke and what you were
+	 * expecting.
+	 *
+	 * The invariant message will be stripped in production, but the invariant
+	 * will remain to ensure logic does not differ in production.
+	 */
+
+	var validateFormat = function validateFormat(format) {};
+
+	if (false) {}
+
+	function invariant(condition, format, a, b, c, d, e, f) {
+	  validateFormat(format);
+
+	  if (!condition) {
+	    var error;
+	    if (format === undefined) {
+	      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+	    } else {
+	      var args = [a, b, c, d, e, f];
+	      var argIndex = 0;
+	      error = new Error(format.replace(/%s/g, function () {
+	        return args[argIndex++];
+	      }));
+	      error.name = 'Invariant Violation';
+	    }
+
+	    error.framesToPop = 1; // we don't care about invariant's own frame
+	    throw error;
+	  }
+	}
+
+	module.exports = invariant;
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	var emptyFunction = __webpack_require__(3);
+	var invariant = __webpack_require__(4);
+	var ReactPropTypesSecret = __webpack_require__(7);
+
+	module.exports = function() {
+	  function shim(props, propName, componentName, location, propFullName, secret) {
+	    if (secret === ReactPropTypesSecret) {
+	      // It is still safe when called from React.
+	      return;
+	    }
+	    invariant(
+	      false,
+	      'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
+	      'Use PropTypes.checkPropTypes() to call them. ' +
+	      'Read more at http://fb.me/use-check-prop-types'
+	    );
+	  };
+	  shim.isRequired = shim;
+	  function getShim() {
+	    return shim;
+	  };
+	  // Important!
+	  // Keep this list in sync with production version in `./factoryWithTypeCheckers.js`.
+	  var ReactPropTypes = {
+	    array: shim,
+	    bool: shim,
+	    func: shim,
+	    number: shim,
+	    object: shim,
+	    string: shim,
+	    symbol: shim,
+
+	    any: shim,
+	    arrayOf: getShim,
+	    element: shim,
+	    instanceOf: getShim,
+	    node: shim,
+	    objectOf: getShim,
+	    oneOf: getShim,
+	    oneOfType: getShim,
+	    shape: getShim
+	  };
+
+	  ReactPropTypes.checkPropTypes = emptyFunction;
+	  ReactPropTypes.PropTypes = ReactPropTypes;
+
+	  return ReactPropTypes;
+	};
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	if (false) { var throwOnDirectAccess, isValidElement, REACT_ELEMENT_TYPE; } else {
+	  // By explicitly using `prop-types` you are opting into new production behavior.
+	  // http://fb.me/prop-types-in-prod
+	  module.exports = __webpack_require__(5)();
+	}
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+	/**
+	 * Copyright 2013-present, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 */
+
+	'use strict';
+
+	var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
+
+	module.exports = ReactPropTypesSecret;
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+	module.exports = __WEBPACK_EXTERNAL_MODULE_8__;
+
+/***/ })
+/******/ ])
+});
+;
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -16039,18 +16499,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
-/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
-/* harmony import */ var _components_Pagination__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Pagination */ "./components/Pagination.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/parse-int */ "./node_modules/@babel/runtime-corejs2/core-js/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "./node_modules/next-server/dist/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+/* harmony import */ var react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-infinite-scroll-component */ "./node_modules/react-infinite-scroll-component/lib/index.js");
+/* harmony import */ var react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_Api__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Api */ "./components/Api.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+/* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
+/* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
+
 
 
 
@@ -16065,85 +16530,146 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
 
 
 
+
 var ApiPages = function ApiPages(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(props.data),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
+  console.log(props);
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(props.data),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
       data = _useState2[0],
       setData = _useState2[1];
 
-  var mounted = Object(react__WEBPACK_IMPORTED_MODULE_3__["useRef"])();
-  Object(react__WEBPACK_IMPORTED_MODULE_3__["useEffect"])(function () {
-    if (!props.isFetched || mounted.current) ApiPages.getInitialProps({
-      page: props.page,
-      search: props.search,
-      isUser: 1
-    }).then(function (json) {
-      return setData(json.data);
-    });else mounted.current = true;
+  var test = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(0);
+  var mounted = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(0);
+  Object(react__WEBPACK_IMPORTED_MODULE_4__["useEffect"])(function () {
+    console.log("hmm");
+    test.current = 1;
+  }, [props.search]);
+  Object(react__WEBPACK_IMPORTED_MODULE_4__["useEffect"])(function () {
+    if (!props.isFetched || mounted.current) {
+      if (test.current == 0) {
+        ApiPages.getInitialProps({
+          page: test.current ? 1 : props.page,
+          search: props.search,
+          isUser: 1
+        }).then(function (json) {
+          console.log(test.current);
+          var temp = jsonConcat(data, json.data);
+          setData(temp);
+        });
+      } else {
+        test.current = 0;
+        setData([]);
+        props.changePage(1);
+      }
+    } else {
+      mounted.current = 1;
+      test.current = 0;
+    }
   }, [props.page, props.search]);
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+
+  var fetchMoreData = function fetchMoreData() {
+    console.log("called");
+    props.changePage(props.page + 1);
+  };
+
+  function jsonConcat(o1, o2) {
+    var t = [];
+
+    for (var key in o1) {
+      t[_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(key)] = o1[key];
+    }
+
+    for (var key in o2) {
+      t[_babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(key) + _babel_runtime_corejs2_core_js_parse_int__WEBPACK_IMPORTED_MODULE_2___default()(data.length)] = o2[key];
+    }
+
+    return t;
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 63
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("meta", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
     keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 64
     },
     __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 66
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h2", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 67
     },
     __self: this
-  }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", {
+  }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 68
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 69
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("br", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 70
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    dataLength: data.length,
+    next: fetchMoreData,
+    hasMore: data.length === 100 ? false : true,
+    loader: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75
+      },
+      __self: this
+    }, "Loading..."),
+    endMessage: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+      style: {
+        textAlign: "center"
+      },
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("b", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78
+      },
+      __self: this
+    }, "Yay! You have seen it all")),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 71
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_9__["default"], {
     data: data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 82
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Pagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  })));
+  }))));
 };
 
 ApiPages.getInitialProps =
@@ -16158,22 +16684,22 @@ function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            _ref$search = _ref.search, search = _ref$search === void 0 ? 'tech' : _ref$search, _ref$page = _ref.page, page = _ref$page === void 0 ? 1 : _ref$page, _ref$isUser = _ref.isUser, isUser = _ref$isUser === void 0 ? 0 : _ref$isUser;
+            _ref$search = _ref.search, search = _ref$search === void 0 ? "tech" : _ref$search, _ref$page = _ref.page, page = _ref$page === void 0 ? 1 : _ref$page, _ref$isUser = _ref.isUser, isUser = _ref$isUser === void 0 ? 0 : _ref$isUser;
 
-            if (!(isUser == 0 && !(typeof window === 'undefined'))) {
+            if (!(isUser == 0 && !(typeof window === "undefined"))) {
               _context.next = 3;
               break;
             }
 
             return _context.abrupt("return", {
-              data: {},
+              data: [],
               isFetched: false
             });
 
           case 3:
-            url = 'https://newsapi.org/v2/everything?' + 'q=' + search + '&' + 'sortBy=publishedAt&' + 'page=' + page + '&' + 'pageSize=10&language=en&' + 'apiKey=3b214239993247f18926b8fab6ee014f';
+            url = "https://newsapi.org/v2/everything?" + "q=" + search + "&" + "sortBy=publishedAt&" + "page=" + page + "&" + "pageSize=10&language=en&" + "apiKey=3b214239993247f18926b8fab6ee014f";
             _context.next = 6;
-            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()(url);
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()(url);
 
           case 6:
             res = _context.sent;
@@ -16183,7 +16709,7 @@ function () {
           case 9:
             json = _context.sent;
             return _context.abrupt("return", {
-              data: json,
+              data: json.articles,
               isFetched: true
             });
 
@@ -16207,7 +16733,9 @@ var mapStateToProps = function mapStateToProps(state) {
   };
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_6__["connect"])(mapStateToProps, null)(ApiPages));
+/* harmony default export */ __webpack_exports__["default"] = (Object(react_redux__WEBPACK_IMPORTED_MODULE_7__["connect"])(mapStateToProps, {
+  changePage: _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_12__["changePage"]
+})(ApiPages));
 
 /***/ }),
 
