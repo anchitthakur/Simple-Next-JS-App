@@ -8233,7 +8233,7 @@ function index() {
         Document: _document["a" /* default */],
         buildManifest: build_manifest,
         reactLoadableManifest: react_loadable_manifest,
-        buildId: "tplvfV0MAzG0L_Elt8cRh",
+        buildId: "dMKkz-13mz5OWgiOh7wKw",
         dynamicBuildId: false,
         assetPrefix: "",
         ampBindInitData: false

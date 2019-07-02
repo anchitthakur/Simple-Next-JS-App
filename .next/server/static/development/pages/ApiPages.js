@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -269,6 +269,66 @@ var Layout = function Layout(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./components/Loader.js":
+/*!******************************!*\
+  !*** ./components/Loader.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Loader; });
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react_spinners_PulseLoader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-spinners/PulseLoader */ "react-spinners/PulseLoader");
+/* harmony import */ var react_spinners_PulseLoader__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_spinners_PulseLoader__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/core */ "@emotion/core");
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+
+var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\components\\Loader.js";
+
+function _templateObject() {
+  var data = Object(_babel_runtime_corejs2_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: block;\n  margin: 0 auto;\n  border-color: red;\n  align:center;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+var override = Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["css"])(_templateObject());
+function Loader() {
+  var loading = true;
+  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+    className: "sweet-loading",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react_spinners_PulseLoader__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    css: override,
+    sizeUnit: "px",
+    size: 18,
+    margin: "2px",
+    color: "#123abc",
+    loading: loading,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }));
+}
 
 /***/ }),
 
@@ -775,6 +835,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "co
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-properties */ "core-js/library/fn/object/define-properties");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
 /*!*******************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
@@ -783,6 +854,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "co
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/freeze */ "core-js/library/fn/object/freeze");
 
 /***/ }),
 
@@ -1064,6 +1146,36 @@ __webpack_require__.r(__webpack_exports__);
 
 function _slicedToArray(arr, i) {
   return Object(_arrayWithHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArrayLimit__WEBPACK_IMPORTED_MODULE_1__["default"])(arr, i) || Object(_nonIterableRest__WEBPACK_IMPORTED_MODULE_2__["default"])();
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js":
+/*!**********************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/taggedTemplateLiteral.js ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _taggedTemplateLiteral; });
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-properties */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-properties.js");
+/* harmony import */ var _core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/freeze */ "./node_modules/@babel/runtime-corejs2/core-js/object/freeze.js");
+/* harmony import */ var _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _taggedTemplateLiteral(strings, raw) {
+  if (!raw) {
+    raw = strings.slice(0);
+  }
+
+  return _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(_core_js_object_define_properties__WEBPACK_IMPORTED_MODULE_0___default()(strings, {
+    raw: {
+      value: _core_js_object_freeze__WEBPACK_IMPORTED_MODULE_1___default()(raw)
+    }
+  }));
 }
 
 /***/ }),
@@ -1519,6 +1631,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_Search__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Search */ "./components/Search.js");
 /* harmony import */ var _components_actions_pageAction__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/actions/pageAction */ "./components/actions/pageAction.js");
+/* harmony import */ var _components_Loader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/Loader */ "./components/Loader.js");
 
 
 
@@ -1535,46 +1648,44 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
 
 
 
+
 var ApiPages = function ApiPages(props) {
   if (props.page <= 0 || props.page > 10) props.changePage(1);
-  console.log(props);
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(props.data),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
       data = _useState2[0],
       setData = _useState2[1];
 
-  var test = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(0);
   var mounted = Object(react__WEBPACK_IMPORTED_MODULE_4__["useRef"])(0);
   Object(react__WEBPACK_IMPORTED_MODULE_4__["useEffect"])(function () {
-    console.log("hmm");
-    test.current = 1;
+    if (!props.isFetched || mounted.current) {
+      props.changePage(1);
+      ApiPages.getInitialProps({
+        page: 1,
+        search: props.search,
+        isUser: 1
+      }).then(function (json) {
+        setData(json.data);
+      });
+    }
   }, [props.search]);
   Object(react__WEBPACK_IMPORTED_MODULE_4__["useEffect"])(function () {
     if (!props.isFetched || mounted.current) {
-      if (test.current == 0) {
-        ApiPages.getInitialProps({
-          page: test.current ? 1 : props.page,
-          search: props.search,
-          isUser: 1
-        }).then(function (json) {
-          console.log(test.current);
-          var temp = jsonConcat(data, json.data);
-          setData(temp);
-        });
-      } else {
-        test.current = 0;
-        setData([]);
-        props.changePage(0);
-      }
+      ApiPages.getInitialProps({
+        page: props.page,
+        search: props.search,
+        isUser: 1
+      }).then(function (json) {
+        var temp = jsonConcat(data, json.data);
+        setData(temp);
+      });
     } else {
       mounted.current = 1;
-      test.current = 0;
     }
-  }, [props.page, props.search]);
+  }, [props.page]);
 
   var fetchMoreData = function fetchMoreData() {
-    console.log("called");
     props.changePage(props.page + 1);
   };
 
@@ -1595,83 +1706,83 @@ var ApiPages = function ApiPages(props) {
   return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
     keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 63
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 65
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 66
     },
     __self: this
   }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 67
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72
+      lineNumber: 68
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 69
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8___default.a, {
     dataLength: data.length,
     next: fetchMoreData,
     hasMore: data.length === 100 ? false : true,
-    loader: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
+    loader: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Loader__WEBPACK_IMPORTED_MODULE_13__["default"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 74
       },
       __self: this
-    }, "Loading..."),
+    }),
     endMessage: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
       style: {
         textAlign: "center"
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80
+        lineNumber: 76
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("b", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81
+        lineNumber: 77
       },
       __self: this
     }, "Yay! You have seen it all")),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 70
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_9__["default"], {
     data: data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 81
     },
     __self: this
   }))));
@@ -1744,7 +1855,7 @@ var mapStateToProps = function mapStateToProps(state) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************!*\
   !*** multi ./pages/ApiPages.js ***!
   \*********************************/
@@ -1753,6 +1864,17 @@ var mapStateToProps = function mapStateToProps(state) {
 
 module.exports = __webpack_require__(/*! C:\Users\im\Desktop\main\pages\ApiPages.js */"./pages/ApiPages.js");
 
+
+/***/ }),
+
+/***/ "@emotion/core":
+/*!********************************!*\
+  !*** external "@emotion/core" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@emotion/core");
 
 /***/ }),
 
@@ -1800,6 +1922,17 @@ module.exports = require("core-js/library/fn/object/create");
 
 /***/ }),
 
+/***/ "core-js/library/fn/object/define-properties":
+/*!**************************************************************!*\
+  !*** external "core-js/library/fn/object/define-properties" ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/define-properties");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/define-property":
 /*!************************************************************!*\
   !*** external "core-js/library/fn/object/define-property" ***!
@@ -1808,6 +1941,17 @@ module.exports = require("core-js/library/fn/object/create");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/freeze":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/freeze" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/freeze");
 
 /***/ }),
 
@@ -1984,6 +2128,17 @@ module.exports = require("react-lazy-load");
 /***/ (function(module, exports) {
 
 module.exports = require("react-redux");
+
+/***/ }),
+
+/***/ "react-spinners/PulseLoader":
+/*!*********************************************!*\
+  !*** external "react-spinners/PulseLoader" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-spinners/PulseLoader");
 
 /***/ }),
 

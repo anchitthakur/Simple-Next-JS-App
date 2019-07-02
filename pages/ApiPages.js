@@ -7,46 +7,42 @@ import Api from "../components/Api";
 import Layout from "../components/Layout";
 import Search from "../components/Search";
 import { changePage } from "../components/actions/pageAction";
+import Loader from "../components/Loader";
 
 const ApiPages = props => {
-  if(props.page<=0 || props.page>10)
-    props.changePage(1)
+  if (props.page <= 0 || props.page > 10) props.changePage(1);
 
-  console.log(props);
   const [data, setData] = useState(props.data);
-  const test = useRef(0);
   const mounted = useRef(0);
   useEffect(() => {
-    console.log("hmm");
-    test.current = 1;
+    if (!props.isFetched || mounted.current) {
+      props.changePage(1)
+      ApiPages.getInitialProps({
+        page: 1,
+        search: props.search,
+        isUser: 1
+      }).then(json => {
+        setData(json.data);
+      });
+    }
   }, [props.search]);
 
   useEffect(() => {
     if (!props.isFetched || mounted.current) {
-      if (test.current == 0) {
-        ApiPages.getInitialProps({
-          page: test.current ? 1 : props.page,
-          search: props.search,
-          isUser: 1
-        }).then(json => {
-          console.log(test.current);
-
-          var temp = jsonConcat(data, json.data);
-          setData(temp);
-        });
-      } else {
-        test.current = 0;
-        setData([]);
-        props.changePage(0);
-      }
+      ApiPages.getInitialProps({
+        page: props.page,
+        search: props.search,
+        isUser: 1
+      }).then(json => {
+        var temp = jsonConcat(data, json.data);
+        setData(temp);
+      });
     } else {
       mounted.current = 1;
-      test.current = 0;
     }
-  }, [props.page, props.search]);
+  }, [props.page]);
 
   const fetchMoreData = () => {
-    console.log("called");
     props.changePage(props.page + 1);
   };
 
@@ -75,7 +71,7 @@ const ApiPages = props => {
           dataLength={data.length}
           next={fetchMoreData}
           hasMore={data.length === 100 ? false : true}
-          loader={<h4>Loading...</h4>}
+          loader={<Loader />}
           endMessage={
             <p style={{ textAlign: "center" }}>
               <b>Yay! You have seen it all</b>
