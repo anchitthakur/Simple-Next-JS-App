@@ -13836,7 +13836,7 @@ function About() {
         Document: _document["a" /* default */],
         buildManifest: build_manifest,
         reactLoadableManifest: react_loadable_manifest,
-        buildId: "4efAsLE2J4kgsS5_pA-Ek",
+        buildId: "tplvfV0MAzG0L_Elt8cRh",
         dynamicBuildId: false,
         assetPrefix: "",
         ampBindInitData: false

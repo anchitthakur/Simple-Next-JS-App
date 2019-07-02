@@ -16532,6 +16532,7 @@ var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\ApiPages.js";
 
 
 var ApiPages = function ApiPages(props) {
+  if (props.page <= 0 || props.page > 10) props.changePage(1);
   console.log(props);
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(props.data),
@@ -16560,7 +16561,7 @@ var ApiPages = function ApiPages(props) {
       } else {
         test.current = 0;
         setData([]);
-        props.changePage(1);
+        props.changePage(0);
       }
     } else {
       mounted.current = 1;
@@ -16590,44 +16591,44 @@ var ApiPages = function ApiPages(props) {
   return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_4___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 66
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("meta", {
     keywords: "API",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 67
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66
+      lineNumber: 69
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 70
     },
     __self: this
   }, "NEWS"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 71
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Search__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 72
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("br", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 73
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(react_infinite_scroll_component__WEBPACK_IMPORTED_MODULE_8___default.a, {
@@ -16637,7 +16638,7 @@ var ApiPages = function ApiPages(props) {
     loader: react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h4", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75
+        lineNumber: 78
       },
       __self: this
     }, "Loading..."),
@@ -16647,26 +16648,26 @@ var ApiPages = function ApiPages(props) {
       },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77
+        lineNumber: 80
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("b", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78
+        lineNumber: 81
       },
       __self: this
     }, "Yay! You have seen it all")),
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 74
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_components_Api__WEBPACK_IMPORTED_MODULE_9__["default"], {
     data: data,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 85
     },
     __self: this
   }))));
@@ -16739,7 +16740,7 @@ var mapStateToProps = function mapStateToProps(state) {
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*********************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FApiPages&absolutePagePath=C%3A%5CUsers%5Cim%5CDesktop%5Cmain%5Cpages%5CApiPages.js ***!
   \*********************************************************************************************************************************/
@@ -16762,5 +16763,5 @@ module.exports = dll_e9ced4903ed7b2c99d94;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=ApiPages.js.map

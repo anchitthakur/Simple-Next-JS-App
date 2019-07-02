@@ -9,6 +9,9 @@ import Search from "../components/Search";
 import { changePage } from "../components/actions/pageAction";
 
 const ApiPages = props => {
+  if(props.page<=0 || props.page>10)
+    props.changePage(1)
+
   console.log(props);
   const [data, setData] = useState(props.data);
   const test = useRef(0);
@@ -34,7 +37,7 @@ const ApiPages = props => {
       } else {
         test.current = 0;
         setData([]);
-        props.changePage(1);
+        props.changePage(0);
       }
     } else {
       mounted.current = 1;

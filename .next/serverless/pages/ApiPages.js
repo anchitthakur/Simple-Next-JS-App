@@ -16350,6 +16350,7 @@ var Search_mapStateToProps = function mapStateToProps(state) {
 
 
 var ApiPages_ApiPages = function ApiPages(props) {
+  if (props.page <= 0 || props.page > 10) props.changePage(1);
   console.log(props);
 
   var _useState = Object(react["useState"])(props.data),
@@ -16378,7 +16379,7 @@ var ApiPages_ApiPages = function ApiPages(props) {
       } else {
         test.current = 0;
         setData([]);
-        props.changePage(1);
+        props.changePage(0);
       }
     } else {
       mounted.current = 1;
@@ -16504,7 +16505,7 @@ var ApiPages_mapStateToProps = function mapStateToProps(state) {
         Document: _document["a" /* default */],
         buildManifest: build_manifest,
         reactLoadableManifest: react_loadable_manifest,
-        buildId: "4efAsLE2J4kgsS5_pA-Ek",
+        buildId: "tplvfV0MAzG0L_Elt8cRh",
         dynamicBuildId: false,
         assetPrefix: "",
         ampBindInitData: false
