@@ -6454,11 +6454,11 @@ exports.formatWithValidation = formatWithValidation;
 
 
     (window.__NEXT_P=window.__NEXT_P||[]).push(["/About", function() {
-      var page = __webpack_require__(/*! ./pages/About.js */ "./pages/About.js")
+        var page = __webpack_require__(/*! ./pages/About.js */ "./pages/About.js");
       if(true) {
         module.hot.accept(/*! ./pages/About.js */ "./pages/About.js", function() {
-          if(!next.router.components["/About"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/About.js */ "./pages/About.js")
+            if (!next.router.components["/About"]) return;
+            var updatedPage = __webpack_require__(/*! ./pages/About.js */ "./pages/About.js");
           next.router.update("/About", updatedPage.default || updatedPage)
         })
       }
@@ -8109,9 +8109,8 @@ module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.3.2 by @mathias */
-;(function(root) {
-
-	/** Detect free variables */
+            (function (root) {
+                /** Detect free variables */
 	var freeExports =  true && exports &&
 		!exports.nodeType && exports;
 	var freeModule =  true && module &&
@@ -10782,7 +10781,8 @@ function About() {
 
 /***/ }),
 
-/***/ 0:
+    /***/
+    1:
 /*!*************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2FAbout&absolutePagePath=%2Fhome%2Fanchit%2FWebstormProjects%2FSimple-next-js-app%2Fpages%2FAbout.js ***!
   \*************************************************************************************************************************************************/
@@ -10805,5 +10805,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+}, [[1, "static/runtime/webpack.js"]]]);
 //# sourceMappingURL=About.js.map

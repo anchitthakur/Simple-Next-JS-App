@@ -1,1 +1,9 @@
-{"/ApiPages":"static/hbKQNiTZXim1azhStXHB-/pages/ApiPages.js","/index":"static/hbKQNiTZXim1azhStXHB-/pages/index.js","/_error":"static/hbKQNiTZXim1azhStXHB-/pages/_error.js","/About":"static/hbKQNiTZXim1azhStXHB-/pages/About.js","/_document":"static/hbKQNiTZXim1azhStXHB-/pages/_document.js","/_app":"static/hbKQNiTZXim1azhStXHB-/pages/_app.js","/":"static/hbKQNiTZXim1azhStXHB-/pages/index.js"}
+{
+  "/About": "static/development/pages/About.js",
+  "/ApiPages": "static/development/pages/ApiPages.js",
+  "/_app": "static/development/pages/_app.js",
+  "/_document": "static/development/pages/_document.js",
+  "/_error": "static/development/pages/_error.js",
+  "/index": "static/development/pages/index.js",
+  "/": "static/development/pages/index.js"
+}

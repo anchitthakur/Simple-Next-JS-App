@@ -6454,11 +6454,11 @@ exports.formatWithValidation = formatWithValidation;
 
 
     (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+        var page = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js");
       if(true) {
         module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+            if (!next.router.components["/"]) return;
+            var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js");
           next.router.update("/", updatedPage.default || updatedPage)
         })
       }
@@ -8109,9 +8109,8 @@ module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.3.2 by @mathias */
-;(function(root) {
-
-	/** Detect free variables */
+            (function (root) {
+                /** Detect free variables */
 	var freeExports =  true && exports &&
 		!exports.nodeType && exports;
 	var freeModule =  true && module &&
@@ -10738,7 +10737,8 @@ function index() {
 
 /***/ }),
 
-/***/ 1:
+    /***/
+    0:
 /*!********************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fanchit%2FWebstormProjects%2FSimple-next-js-app%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************/
@@ -10761,5 +10761,5 @@ module.exports = dll_1aef2d0bbc0d334d831c;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+}, [[0, "static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

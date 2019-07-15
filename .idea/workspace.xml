@@ -2,7 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5852e39c-9ef4-41c9-9812-df828e97e3e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/BUILD_ID" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/build-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/build-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a1070879142" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a2131252914" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a2535130941" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a2643322015" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a319127092" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a3683707078" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a4066498199" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/cache/next-minifier/a938482218" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/react-loadable-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/react-loadable-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/records.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/pages-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/pages-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/records.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/About.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/About.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/server/static/development/pages/index.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/development/pages/next/dist/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/hbKQNiTZXim1azhStXHB-/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/hbKQNiTZXim1azhStXHB-/pages/ApiPages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/hbKQNiTZXim1azhStXHB-/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/hbKQNiTZXim1azhStXHB-/pages/_document.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/hbKQNiTZXim1azhStXHB-/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/server/static/hbKQNiTZXim1azhStXHB-/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/serverless/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/serverless/pages/ApiPages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/serverless/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/serverless/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/serverless/records.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/6OtcyVrAPsqqmhVuVBzcd/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/6OtcyVrAPsqqmhVuVBzcd/pages/ApiPages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/6OtcyVrAPsqqmhVuVBzcd/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/6OtcyVrAPsqqmhVuVBzcd/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/6OtcyVrAPsqqmhVuVBzcd/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/_2OvEKRvOWQ_TKW_rUm9L/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/_2OvEKRvOWQ_TKW_rUm9L/pages/ApiPages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/_2OvEKRvOWQ_TKW_rUm9L/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/_2OvEKRvOWQ_TKW_rUm9L/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/_2OvEKRvOWQ_TKW_rUm9L/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/chunks/commons.16283cea9ae0472c5960.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/d5PN0esWbAzTxjTI6jk86/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/d5PN0esWbAzTxjTI6jk86/pages/ApiPages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/d5PN0esWbAzTxjTI6jk86/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/d5PN0esWbAzTxjTI6jk86/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/d5PN0esWbAzTxjTI6jk86/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/About.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/About.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/development/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/development/pages/next/dist/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/hbKQNiTZXim1azhStXHB-/pages/About.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/hbKQNiTZXim1azhStXHB-/pages/ApiPages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/hbKQNiTZXim1azhStXHB-/pages/_app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/hbKQNiTZXim1azhStXHB-/pages/_error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/hbKQNiTZXim1azhStXHB-/pages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/main-541f01c65744a5c2c60b.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack-a79426b5e11f0ba5879d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/runtime/webpack.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/6369e7cffe0743943794.hot-update.json" beforeDir="false" afterPath="$PROJECT_DIR$/.next/static/webpack/6369e7cffe0743943794.hot-update.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.next/static/webpack/bffa73257f7f62172260.hot-update.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/offline/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/offline/serviceWorker.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,14 +77,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/next.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-start-column="3" selection-end-line="2" selection-end-column="6" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -32,6 +91,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="201">
               <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/ApiPages.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-63">
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -48,19 +116,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/_app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+            <state relative-caret-position="273">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/offline/serviceWorker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="189">
+              <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
               <folding>
-                <marker date="1563176435778" expanded="true" signature="486:992" ph="..." />
+                <marker date="1563179106126" expanded="true" signature="479:482" ph="..." />
               </folding>
             </state>
           </provider>
@@ -90,9 +170,10 @@
         <option value="$PROJECT_DIR$/components/serviceWorker.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/offline/serviceWorker.js" />
-        <option value="$PROJECT_DIR$/pages/_app.js" />
         <option value="$PROJECT_DIR$/next.config.js" />
+        <option value="$PROJECT_DIR$/pages/index.js" />
+        <option value="$PROJECT_DIR$/pages/_app.js" />
+        <option value="$PROJECT_DIR$/offline/serviceWorker.js" />
       </list>
     </option>
   </component>
@@ -114,6 +195,11 @@
             <path>
               <item name="Simple-next-js-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="Simple-next-js-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Simple-next-js-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Simple-next-js-app" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,7 +260,7 @@
       <workItem from="1563018985878" duration="573000" />
       <workItem from="1563020092487" duration="322000" />
       <workItem from="1563104411329" duration="173000" />
-      <workItem from="1563171692233" duration="4744000" />
+      <workItem from="1563171692233" duration="6877000" />
     </task>
     <task id="LOCAL-00001" summary="Working with service Worker">
       <created>1563176730218</created>
@@ -187,7 +273,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6867000" />
+    <option name="totallyTimeSpent" value="9000000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -200,8 +286,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="70" y="27" width="1850" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.106732346" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.106732346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32890365" />
@@ -214,7 +301,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32890365" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32890365" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -279,27 +366,10 @@
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/ApiPages.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/offline/serviceWorker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <marker date="1563176435778" expanded="true" signature="486:992" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -310,19 +380,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/_app.js">
+    <entry file="file://$PROJECT_DIR$/next.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        <state relative-caret-position="42">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/next.config.js">
+    <entry file="file://$PROJECT_DIR$/pages/ApiPages.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-start-column="3" selection-end-line="2" selection-end-column="6" />
+        <state relative-caret-position="-63">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/_app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/offline/serviceWorker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding>
+            <marker date="1563179106126" expanded="true" signature="479:482" ph="..." />
           </folding>
         </state>
       </provider>
