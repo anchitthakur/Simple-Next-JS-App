@@ -179,7 +179,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anchit/WebstormProjects/Simple-next-js-app/lib/with-redux-store.js";
 
 
 var isServer = typeof window === 'undefined';
@@ -269,12 +268,7 @@ function getOrCreateStore(initialState) {
         key: "render",
         value: function render() {
           return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
-            reduxStore: this.reduxStore,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 47
-            },
-            __self: this
+              reduxStore: this.reduxStore
           }));
         }
       }]);
@@ -5990,11 +5984,11 @@ module.exports = __webpack_require__(/*! ./dist/pages/_app */ "./node_modules/ne
 
 
     (window.__NEXT_P=window.__NEXT_P||[]).push(["/_app", function() {
-      var page = __webpack_require__(/*! private-next-pages/_app.js */ "./pages/_app.js")
+        var page = __webpack_require__(/*! private-next-pages/_app.js */ "./pages/_app.js");
       if(true) {
         module.hot.accept(/*! private-next-pages/_app.js */ "./pages/_app.js", function() {
-          if(!next.router.components["/_app"]) return
-          var updatedPage = __webpack_require__(/*! private-next-pages/_app.js */ "./pages/_app.js")
+            if (!next.router.components["/_app"]) return;
+            var updatedPage = __webpack_require__(/*! private-next-pages/_app.js */ "./pages/_app.js");
           next.router.update("/_app", updatedPage.default || updatedPage)
         })
       }
@@ -7131,9 +7125,8 @@ module.exports = (__webpack_require__(/*! dll-reference dll_1aef2d0bbc0d334d831c
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(module, global) {var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.3.2 by @mathias */
-;(function(root) {
-
-	/** Detect free variables */
+            (function (root) {
+                /** Detect free variables */
 	var freeExports =  true && exports &&
 		!exports.nodeType && exports;
 	var freeModule =  true && module &&
@@ -9868,7 +9861,7 @@ checkPropTypes.resetWarningCache = function() {
   if (true) {
     loggedTypeFailures = {};
   }
-}
+};
 
 module.exports = checkPropTypes;
 
@@ -12065,10 +12058,10 @@ function symbolObservablePonyfill(root) {
 	}
 
 	return result;
-};
+}
 
-
-/***/ }),
+        /***/
+    }),
 
 /***/ "./node_modules/url/url.js":
 /*!*********************************!*\

@@ -275,7 +275,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anchit/WebstormProjects/Simple-next-js-app/lib/with-redux-store.js";
 
 
 var isServer = typeof window === 'undefined';
@@ -365,12 +364,7 @@ function getOrCreateStore(initialState) {
         key: "render",
         value: function render() {
           return react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement(App, Object(_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, this.props, {
-            reduxStore: this.reduxStore,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 47
-            },
-            __self: this
+              reduxStore: this.reduxStore
           }));
         }
       }]);
