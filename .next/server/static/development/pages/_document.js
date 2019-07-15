@@ -2100,10 +2100,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_6__);
 
 
-
-
-
-var _jsxFileName = "C:\\Users\\im\\Desktop\\main\\pages\\_document.js";
+        var _jsxFileName = "/home/anchit/WebstormProjects/Simple-next-js-app/pages/_document.js";
 
 
 

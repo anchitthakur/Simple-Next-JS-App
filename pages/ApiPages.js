@@ -1,12 +1,12 @@
 import Head from "next/head";
 import fetch from "isomorphic-unfetch";
-import { useEffect, useState, useRef } from "react";
-import { connect } from "react-redux";
+import {useEffect, useRef, useState} from "react";
+import {connect} from "react-redux";
 import InfiniteScroll from "react-infinite-scroll-component";
 import Api from "../components/Api";
 import Layout from "../components/Layout";
 import Search from "../components/Search";
-import { changePage } from "../components/actions/pageAction";
+import {changePage} from "../components/actions/pageAction";
 import Loader from "../components/Loader";
 
 const ApiPages = props => {
@@ -16,7 +16,7 @@ const ApiPages = props => {
   const mounted = useRef(0);
   useEffect(() => {
     if (!props.isFetched || mounted.current) {
-      props.changePage(1)
+        props.changePage(1);
       ApiPages.getInitialProps({
         page: 1,
         search: props.search,
@@ -68,11 +68,11 @@ const ApiPages = props => {
         <Search />
         <br />
         <InfiniteScroll
-          dataLength={data.length}
-          next={fetchMoreData}
-          hasMore={data.length === 100 ? false : true}
-          loader={<Loader />}
-          endMessage={
+            dataLength={data.length}
+            next={fetchMoreData}
+            hasMore={data.length !== 100}
+            loader={<Loader/>}
+            endMessage={
             <p style={{ textAlign: "center" }}>
               <b>Yay! You have seen it all</b>
             </p>
@@ -90,10 +90,10 @@ ApiPages.getInitialProps = async function({
   page = 1,
   isUser = 0
 }) {
-  if (isUser == 0 && !(typeof window === "undefined"))
+    if (isUser === 0 && !(typeof window === "undefined"))
     return { data: [], isFetched: false };
 
-  var url =
+    let url =
     "https://newsapi.org/v2/everything?" +
     "q=" +
     search +
