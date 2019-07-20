@@ -937,32 +937,9 @@ var possibleConstructorReturn = __webpack_require__("MI3g");
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js
 var getPrototypeOf = __webpack_require__("a7VT");
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js
-var assertThisInitialized = __webpack_require__("AT/M");
-
 // EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js
 var inherits = __webpack_require__("Tit0");
 
-// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js
-var define_property = __webpack_require__("hfKm");
-var define_property_default = /*#__PURE__*/__webpack_require__.n(define_property);
-
-// CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    define_property_default()(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
 // EXTERNAL MODULE: ./node_modules/next/app.js
 var app = __webpack_require__("8Bbg");
 var app_default = /*#__PURE__*/__webpack_require__.n(app);
@@ -1010,6 +987,26 @@ var get_own_property_symbols_default = /*#__PURE__*/__webpack_require__.n(get_ow
 var keys = __webpack_require__("pLtp");
 var keys_default = /*#__PURE__*/__webpack_require__.n(keys);
 
+// EXTERNAL MODULE: ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js
+var define_property = __webpack_require__("hfKm");
+var define_property_default = /*#__PURE__*/__webpack_require__.n(define_property);
+
+// CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    define_property_default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
 // CONCATENATED MODULE: ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js
 
 
@@ -1245,37 +1242,15 @@ var react_redux_lib = __webpack_require__("Vg22");
 
 
 
-
-
 var _app_MyApp =
 /*#__PURE__*/
 function (_App) {
   Object(inherits["default"])(MyApp, _App);
 
   function MyApp() {
-    var _getPrototypeOf2;
-
-    var _this;
-
     Object(classCallCheck["default"])(this, MyApp);
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = Object(possibleConstructorReturn["default"])(this, (_getPrototypeOf2 = Object(getPrototypeOf["default"])(MyApp)).call.apply(_getPrototypeOf2, [this].concat(args)));
-
-    _defineProperty(Object(assertThisInitialized["default"])(_this), "componentDidMount", function () {
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js")["catch"](function (err) {
-          return console.error("Service worker registration failed", err);
-        });
-      } else {
-        console.log("Service worker not supported");
-      }
-    });
-
-    return _this;
+    return Object(possibleConstructorReturn["default"])(this, Object(getPrototypeOf["default"])(MyApp).apply(this, arguments));
   }
 
   Object(createClass["default"])(MyApp, [{
@@ -13717,7 +13692,7 @@ function About() {
         buildManifest: build_manifest,
         reactLoadableManifest: react_loadable_manifest,
         canonicalBase: "",
-        buildId: "OtpQv6aKh6QP3osFY0bik",
+        buildId: "rDTUHNGu2C0lQHykrfikW",
         dynamicBuildId: false,
         assetPrefix: "",
         ampBindInitData: false
