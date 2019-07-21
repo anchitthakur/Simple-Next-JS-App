@@ -2103,7 +2103,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anchit/WebstormProjects/test/pages/_document.js";
+var _jsxFileName = "/home/anchit/WebstormProjects/Simple-Next-JS-App/pages/_document.js";
 
 
 

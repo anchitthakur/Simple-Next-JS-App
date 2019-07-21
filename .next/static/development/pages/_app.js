@@ -179,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anchit/WebstormProjects/test/lib/with-redux-store.js";
+var _jsxFileName = "/home/anchit/WebstormProjects/Simple-Next-JS-App/lib/with-redux-store.js";
 
 
 var isServer = typeof window === 'undefined';
@@ -12948,7 +12948,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/home/anchit/WebstormProjects/test/pages/_app.js";
+var _jsxFileName = "/home/anchit/WebstormProjects/Simple-Next-JS-App/pages/_app.js";
 
 
 

@@ -8,6 +8,8 @@ import Layout from "../components/Layout";
 import Search from "../components/Search";
 import { changePage } from "../components/actions/pageAction";
 import Loader from "../components/Loader";
+import ScrollUpButton from "react-scroll-up-button"; //Add this line Here
+
 
 const ApiPages = props => {
   if (props.page <= 0 || props.page > 10) props.changePage(1);
@@ -63,6 +65,7 @@ const ApiPages = props => {
         <meta keywords="API" />
       </Head>
       <Layout>
+        <ScrollUpButton />
         <h2>NEWS</h2>
         <br />
         <Search />
