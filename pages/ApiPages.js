@@ -104,6 +104,8 @@ ApiPages.getInitialProps = async function({
     "&" +
     "pageSize=10&language=en&" +
     "apiKey=3b214239993247f18926b8fab6ee014f";
+    console.log('===================');
+    console.log(url);
   const res = await fetch(url);
   const json = await res.json();
   return { data: json.articles, isFetched: true };

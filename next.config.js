@@ -1,4 +1,7 @@
-module.exports = {
+const withOffline = require('next-offline');
+
+
+module.exports = withOffline({
     target: 'server',
     exportPathMap: function () {
         return {
@@ -6,5 +9,17 @@ module.exports = {
             '/About': {page: '/About'},
             '/ApiPages': {page: '/ApiPages'}
         };
+    },
+    workboxOpts: {
+        runtimeCaching: [
+            {
+                urlPattern: /ApiPages/,
+                handler: 'StaleWhileRevalidate',
+            },
+            {
+                urlPattern: /.*/,
+                handler: 'CacheFirst',
+            },
+        ]
     }
-}
+});
