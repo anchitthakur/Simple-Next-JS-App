@@ -1,25 +1,33 @@
 const withOffline = require('next-offline');
 
-
-module.exports = withOffline({
-    target: 'server',
-    exportPathMap: function () {
-        return {
-            '/': {page: '/'},
-            '/About': {page: '/About'},
-            '/ApiPages': {page: '/ApiPages'}
-        };
-    },
+const nextConfig = {
+    target: 'serverless',
     workboxOpts: {
+        swDest: 'static/service-worker.js',
         runtimeCaching: [
             {
-                urlPattern: /ApiPages/,
+                urlPattern: /(https:\/\/newsapi.org){1}.*/,
                 handler: 'StaleWhileRevalidate',
+                options: {
+                    cacheName: 'Api-calls',
+                    cacheableResponse: {
+                        statuses: [0, 200],
+                    },
+                },
+            },
+            {
+                urlPattern: /static\//,
+                handler: 'CacheFirst',
             },
             {
                 urlPattern: /.*/,
-                handler: 'CacheFirst',
+                handler: 'StaleWhileRevalidate',
+                options: {
+                    cacheName: 'Runtime-caches',
+                },
             },
-        ]
-    }
-});
+        ],
+    },
+};
+
+module.exports = withOffline(nextConfig);
