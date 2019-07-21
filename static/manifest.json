@@ -1,0 +1,21 @@
+{
+  "name": "NEWS App",
+  "short_name": "NEWS",
+  "icons": [
+    {
+      "src": "/static/img.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/static/img.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "description": "This is a simple news App using Next.js framework",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#000"
+}
