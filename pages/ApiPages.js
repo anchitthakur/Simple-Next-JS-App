@@ -62,7 +62,7 @@ const ApiPages = props => {
   return (
     <>
       <Head>
-        <meta keywords="API" />
+        <meta keywords="News" />
       </Head>
       <Layout>
         <ScrollUpButton />

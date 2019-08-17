@@ -7,6 +7,7 @@ export default class myDoc extends Document {
             <Head>
                 <link rel="manifest" href="/static/manifest.json"/>
                 <meta charSet="utf-8"/>
+                <meta name="google-site-verification" content="Eaju2jyJXvpefVvwT9HyQWpb6JfWKhS_vIyecLsEUk8" />
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
